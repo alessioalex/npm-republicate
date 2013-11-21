@@ -1,0 +1,43 @@
+{
+  "name": "npm-republicate",
+  "version": "0.0.1",
+  "description": "Replicate an NPM module (along with its deps) from registry A to registry B (by publishing it && its deps).",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~3.4.4",
+    "lodash": "~2.2.1",
+    "npm-dep-chain": "~0.0.1",
+    "npm-pkginfo": "~0.0.2",
+    "npm-registry-client": "0.2.x",
+    "npmconf": "~0.1.5",
+    "once": "~1.3.0",
+    "request": "~2.27.0",
+    "semver": "2.2.x",
+    "uuid": "~1.4.1",
+    "bunyan": "~0.22.0",
+    "errto": "~0.2.1",
+    "after": "~0.8.1"
+  },
+  "devDependencies": {
+    "portfinder": "~0.2.1",
+    "mocha": "~1.14.0",
+    "fs-extra": "~0.8.1"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alessioalex/npm-republicate"
+  },
+  "keywords": [
+    "npm",
+    "publish",
+    "replicate"
+  ],
+  "author": "Alexandru Vlăduţu <alexandru.vladutu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alessioalex/npm-republicate/issues"
+  }
+}

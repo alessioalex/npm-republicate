@@ -1,0 +1,1813 @@
+{
+  "buffer-crc32": {
+    "author": {
+      "name": "Brian J. Brennan",
+      "email": "brianloveswords@gmail.com",
+      "url": "http://bjb.io"
+    },
+    "name": "buffer-crc32",
+    "description": "A pure javascript CRC32 algorithm that plays nice with binary data",
+    "version": "0.1.1",
+    "homepage": "https://github.com/brianloveswords/buffer-crc32",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/brianloveswords/buffer-crc32.git"
+    },
+    "main": "index.js",
+    "scripts": {
+      "test": "./node_modules/.bin/tap tests/*.test.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "tap": "~0.2.5"
+    },
+    "optionalDependencies": {},
+    "engines": {
+      "node": "*"
+    },
+    "_npmUser": {
+      "name": "brianloveswords",
+      "email": "brian@nyhacker.org"
+    },
+    "_id": "buffer-crc32",
+    "_engineSupported": true,
+    "_npmVersion": "1.1.16",
+    "_nodeVersion": "v0.8.1",
+    "_defaultsLoaded": true,
+    "dist": {
+      "shasum": "7e110dc9953908ab7c32acdc70c9f945b1cbc526",
+      "tarball": "http://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.1.1.tgz"
+    },
+    "readme": "# buffer-crc32\n\n[![Build Status](https://secure.travis-ci.org/brianloveswords/buffer-crc32.png?branch=master)](http://travis-ci.org/brianloveswords/buffer-crc32)\n\ncrc32 that works with binary data and fancy character sets, outputs\nbuffer, signed or unsigned data and has tests.\n\nDerived from the sample CRC implementation in the PNG specification: http://www.w3.org/TR/PNG/#D-CRCAppendix\n\n# install\n```\nnpm install buffer-crc32\n```\n\n# example\n```js\nvar crc32 = require('buffer-crc32');\n// works with buffers\nvar buf = Buffer([[0x00, 0x73, 0x75, 0x70, 0x20, 0x62, 0x72, 0x6f, 0x00])\ncrc32(buf) // -> <Buffer 94 5a ab 4a>\n\n// has convenience methods for getting signed or unsigned ints\ncrc32.signed(buf) // -> -1805997238\ncrc32.unsigned(buf) // -> 2488970058\n\n// will cast to buffer if given a string, so you can\n// directly use foreign characters safely\ncrc32('自動販売機') // -> <Buffer cb 03 1a c5>\n```\n\n# tests\nThis was tested against the output of zlib's crc32 method. You can run\nthe tests with`npm test` (requires tap)\n",
+    "maintainers": [
+      {
+        "name": "brianloveswords",
+        "email": "brian@nyhacker.org"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb010050-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.1.1": {
+        "author": {
+          "name": "Brian J. Brennan",
+          "email": "brianloveswords@gmail.com",
+          "url": "http://bjb.io"
+        },
+        "name": "buffer-crc32",
+        "description": "A pure javascript CRC32 algorithm that plays nice with binary data",
+        "version": "0.1.1",
+        "homepage": "https://github.com/brianloveswords/buffer-crc32",
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/brianloveswords/buffer-crc32.git"
+        },
+        "main": "index.js",
+        "scripts": {
+          "test": "./node_modules/.bin/tap tests/*.test.js"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "tap": "~0.2.5"
+        },
+        "optionalDependencies": {},
+        "engines": {
+          "node": "*"
+        },
+        "_npmUser": {
+          "name": "brianloveswords",
+          "email": "brian@nyhacker.org"
+        },
+        "_id": "buffer-crc32@0.1.1",
+        "_engineSupported": true,
+        "_npmVersion": "1.1.16",
+        "_nodeVersion": "v0.8.1",
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "7e110dc9953908ab7c32acdc70c9f945b1cbc526",
+          "tarball": "http://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.1.1.tgz"
+        },
+        "readme": "# buffer-crc32\n\n[![Build Status](https://secure.travis-ci.org/brianloveswords/buffer-crc32.png?branch=master)](http://travis-ci.org/brianloveswords/buffer-crc32)\n\ncrc32 that works with binary data and fancy character sets, outputs\nbuffer, signed or unsigned data and has tests.\n\nDerived from the sample CRC implementation in the PNG specification: http://www.w3.org/TR/PNG/#D-CRCAppendix\n\n# install\n```\nnpm install buffer-crc32\n```\n\n# example\n```js\nvar crc32 = require('buffer-crc32');\n// works with buffers\nvar buf = Buffer([[0x00, 0x73, 0x75, 0x70, 0x20, 0x62, 0x72, 0x6f, 0x00])\ncrc32(buf) // -> <Buffer 94 5a ab 4a>\n\n// has convenience methods for getting signed or unsigned ints\ncrc32.signed(buf) // -> -1805997238\ncrc32.unsigned(buf) // -> 2488970058\n\n// will cast to buffer if given a string, so you can\n// directly use foreign characters safely\ncrc32('自動販売機') // -> <Buffer cb 03 1a c5>\n```\n\n# tests\nThis was tested against the output of zlib's crc32 method. You can run\nthe tests with`npm test` (requires tap)\n",
+        "maintainers": [
+          {
+            "name": "brianloveswords",
+            "email": "brian@nyhacker.org"
+          }
+        ],
+        "directories": {}
+      },
+      "0.2.1": {
+        "author": {
+          "name": "Brian J. Brennan",
+          "email": "brianloveswords@gmail.com",
+          "url": "http://bjb.io"
+        },
+        "name": "buffer-crc32",
+        "description": "A pure javascript CRC32 algorithm that plays nice with binary data",
+        "version": "0.2.1",
+        "contributors": [
+          {
+            "name": "Vladimir Kuznetsov"
+          }
+        ],
+        "homepage": "https://github.com/brianloveswords/buffer-crc32",
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/brianloveswords/buffer-crc32.git"
+        },
+        "main": "index.js",
+        "scripts": {
+          "test": "./node_modules/.bin/tap tests/*.test.js"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "tap": "~0.2.5"
+        },
+        "optionalDependencies": {},
+        "engines": {
+          "node": "*"
+        },
+        "readme": "# buffer-crc32\n\n[![Build Status](https://secure.travis-ci.org/brianloveswords/buffer-crc32.png?branch=master)](http://travis-ci.org/brianloveswords/buffer-crc32)\n\ncrc32 that works with binary data and fancy character sets, outputs\nbuffer, signed or unsigned data and has tests.\n\nDerived from the sample CRC implementation in the PNG specification: http://www.w3.org/TR/PNG/#D-CRCAppendix\n\n# install\n```\nnpm install buffer-crc32\n```\n\n# example\n```js\nvar crc32 = require('buffer-crc32');\n// works with buffers\nvar buf = Buffer([0x00, 0x73, 0x75, 0x70, 0x20, 0x62, 0x72, 0x6f, 0x00])\ncrc32(buf) // -> <Buffer 94 5a ab 4a>\n\n// has convenience methods for getting signed or unsigned ints\ncrc32.signed(buf) // -> -1805997238\ncrc32.unsigned(buf) // -> 2488970058\n\n// will cast to buffer if given a string, so you can\n// directly use foreign characters safely\ncrc32('自動販売機') // -> <Buffer cb 03 1a c5>\n\n// and works in append mode too\nvar partialCrc = crc32('hey');\nvar partialCrc = crc32(' ', partialCrc);\nvar partialCrc = crc32('sup', partialCrc);\nvar partialCrc = crc32(' ', partialCrc);\nvar finalCrc = crc32('bros', partialCrc); // -> <Buffer 47 fa 55 70>\n```\n\n# tests\nThis was tested against the output of zlib's crc32 method. You can run\nthe tests with`npm test` (requires tap)\n\n# see also\nhttps://github.com/alexgorbatchev/node-crc, `crc.buffer.crc32` also\nsupports buffer inputs and return unsigned ints (thanks @tjholowaychuk).\n\n# license\nMIT/X11\n",
+        "readmeFilename": "README.md",
+        "_id": "buffer-crc32@0.2.1",
+        "dist": {
+          "shasum": "be3e5382fc02b6d6324956ac1af98aa98b08534c",
+          "tarball": "http://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz"
+        },
+        "_npmVersion": "1.1.65",
+        "_npmUser": {
+          "name": "brianloveswords",
+          "email": "brian@nyhacker.org"
+        },
+        "maintainers": [
+          {
+            "name": "brianloveswords",
+            "email": "brian@nyhacker.org"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.2.1"
+    }
+  },
+  "bytes": {
+    "name": "bytes",
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca",
+      "url": "http://tjholowaychuk.com"
+    },
+    "description": "byte size string parser / serializer",
+    "version": "0.2.0",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+    },
+    "readme": "# node-bytes\n\n  Byte string parser / formatter.\n\n## Example:\n\n```js\nbytes('1kb')\n// => 1024\n\nbytes('2mb')\n// => 2097152\n\nbytes('1gb')\n// => 1073741824\n\nbytes(1073741824)\n// => 1gb\n```\n\n## Installation\n\n```\n$ npm install bytes\n$ component install visionmedia/bytes.js\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+    "readmeFilename": "Readme.md",
+    "_id": "bytes",
+    "dist": {
+      "shasum": "aad33ec14e3dc2ca74e8e7d451f9ba053ad4f7a0",
+      "tarball": "http://registry.npmjs.org/bytes/-/bytes-0.2.0.tgz"
+    },
+    "_npmVersion": "1.1.64",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb014e70-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.2.0": {
+        "name": "bytes",
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca",
+          "url": "http://tjholowaychuk.com"
+        },
+        "description": "byte size string parser / serializer",
+        "version": "0.2.0",
+        "main": "index.js",
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "*",
+          "should": "*"
+        },
+        "readme": "# node-bytes\n\n  Byte string parser / formatter.\n\n## Example:\n\n```js\nbytes('1kb')\n// => 1024\n\nbytes('2mb')\n// => 2097152\n\nbytes('1gb')\n// => 1073741824\n\nbytes(1073741824)\n// => 1gb\n```\n\n## Installation\n\n```\n$ npm install bytes\n$ component install visionmedia/bytes.js\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+        "readmeFilename": "Readme.md",
+        "_id": "bytes@0.2.0",
+        "dist": {
+          "shasum": "aad33ec14e3dc2ca74e8e7d451f9ba053ad4f7a0",
+          "tarball": "http://registry.npmjs.org/bytes/-/bytes-0.2.0.tgz"
+        },
+        "_npmVersion": "1.1.64",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.2.0"
+    }
+  },
+  "commander": {
+    "name": "commander",
+    "version": "0.6.1",
+    "description": "the complete solution for node.js command-line programs",
+    "keywords": [
+      "command",
+      "option",
+      "parser",
+      "prompt",
+      "stdin"
+    ],
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/visionmedia/commander.js.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "should": ">= 0.0.1"
+    },
+    "scripts": {
+      "test": "make test"
+    },
+    "main": "index",
+    "engines": {
+      "node": ">= 0.4.x"
+    },
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "_id": "commander",
+    "optionalDependencies": {},
+    "_engineSupported": true,
+    "_npmVersion": "1.1.0-3",
+    "_nodeVersion": "v0.6.12",
+    "_defaultsLoaded": true,
+    "dist": {
+      "shasum": "fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06",
+      "tarball": "http://registry.npmjs.org/commander/-/commander-0.6.1.tgz"
+    },
+    "readme": "# Commander.js\n\n  The complete solution for [node.js](http://nodejs.org) command-line interfaces, inspired by Ruby's [commander](https://github.com/visionmedia/commander).\n\n [![Build Status](https://secure.travis-ci.org/visionmedia/commander.js.png)](http://travis-ci.org/visionmedia/commander.js)\n\n## Installation\n\n    $ npm install commander\n\n## Option parsing\n\n Options with commander are defined with the `.option()` method, also serving as documentation for the options. The example below parses args and options from `process.argv`, leaving remaining args as the `program.args` array which were not consumed by options.\n\n```js\n#!/usr/bin/env node\n\n/**\n * Module dependencies.\n */\n\nvar program = require('commander');\n\nprogram\n  .version('0.0.1')\n  .option('-p, --peppers', 'Add peppers')\n  .option('-P, --pineapple', 'Add pineapple')\n  .option('-b, --bbq', 'Add bbq sauce')\n  .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')\n  .parse(process.argv);\n\nconsole.log('you ordered a pizza with:');\nif (program.peppers) console.log('  - peppers');\nif (program.pineapple) console.log('  - pineappe');\nif (program.bbq) console.log('  - bbq');\nconsole.log('  - %s cheese', program.cheese);\n```\n\n Short flags may be passed as a single arg, for example `-abc` is equivalent to `-a -b -c`. Multi-word options such as \"--template-engine\" are camel-cased, becoming `program.templateEngine` etc.\n\n## Automated --help\n\n The help information is auto-generated based on the information commander already knows about your program, so the following `--help` info is for free:\n\n```  \n $ ./examples/pizza --help\n\n   Usage: pizza [options]\n\n   Options:\n\n     -V, --version        output the version number\n     -p, --peppers        Add peppers\n     -P, --pineapple      Add pineappe\n     -b, --bbq            Add bbq sauce\n     -c, --cheese <type>  Add the specified type of cheese [marble]\n     -h, --help           output usage information\n\n```\n\n## Coercion\n\n```js\nfunction range(val) {\n  return val.split('..').map(Number);\n}\n\nfunction list(val) {\n  return val.split(',');\n}\n\nprogram\n  .version('0.0.1')\n  .usage('[options] <file ...>')\n  .option('-i, --integer <n>', 'An integer argument', parseInt)\n  .option('-f, --float <n>', 'A float argument', parseFloat)\n  .option('-r, --range <a>..<b>', 'A range', range)\n  .option('-l, --list <items>', 'A list', list)\n  .option('-o, --optional [value]', 'An optional value')\n  .parse(process.argv);\n\nconsole.log(' int: %j', program.integer);\nconsole.log(' float: %j', program.float);\nconsole.log(' optional: %j', program.optional);\nprogram.range = program.range || [];\nconsole.log(' range: %j..%j', program.range[0], program.range[1]);\nconsole.log(' list: %j', program.list);\nconsole.log(' args: %j', program.args);\n```\n\n## Custom help\n\n You can display arbitrary `-h, --help` information\n by listening for \"--help\". Commander will automatically\n exit once you are done so that the remainder of your program\n does not execute causing undesired behaviours, for example\n in the following executable \"stuff\" will not output when\n `--help` is used.\n\n```js\n#!/usr/bin/env node\n\n/**\n * Module dependencies.\n */\n\nvar program = require('../');\n\nfunction list(val) {\n  return val.split(',').map(Number);\n}\n\nprogram\n  .version('0.0.1')\n  .option('-f, --foo', 'enable some foo')\n  .option('-b, --bar', 'enable some bar')\n  .option('-B, --baz', 'enable some baz');\n\n// must be before .parse() since\n// node's emit() is immediate\n\nprogram.on('--help', function(){\n  console.log('  Examples:');\n  console.log('');\n  console.log('    $ custom-help --help');\n  console.log('    $ custom-help -h');\n  console.log('');\n});\n\nprogram.parse(process.argv);\n\nconsole.log('stuff');\n```\n\nyielding the following help output:\n\n```\n\nUsage: custom-help [options]\n\nOptions:\n\n  -h, --help     output usage information\n  -V, --version  output the version number\n  -f, --foo      enable some foo\n  -b, --bar      enable some bar\n  -B, --baz      enable some baz\n\nExamples:\n\n  $ custom-help --help\n  $ custom-help -h\n\n```\n\n## .prompt(msg, fn)\n\n Single-line prompt:\n\n```js\nprogram.prompt('name: ', function(name){\n  console.log('hi %s', name);\n});\n```\n\n Multi-line prompt:\n\n```js\nprogram.prompt('description:', function(name){\n  console.log('hi %s', name);\n});\n```\n\n Coercion:\n\n```js\nprogram.prompt('Age: ', Number, function(age){\n  console.log('age: %j', age);\n});\n```\n\n```js\nprogram.prompt('Birthdate: ', Date, function(date){\n  console.log('date: %s', date);\n});\n```\n\n## .password(msg[, mask], fn)\n\nPrompt for password without echoing:\n\n```js\nprogram.password('Password: ', function(pass){\n  console.log('got \"%s\"', pass);\n  process.stdin.destroy();\n});\n```\n\nPrompt for password with mask char \"*\":\n\n```js\nprogram.password('Password: ', '*', function(pass){\n  console.log('got \"%s\"', pass);\n  process.stdin.destroy();\n});\n```\n\n## .confirm(msg, fn)\n\n Confirm with the given `msg`:\n\n```js\nprogram.confirm('continue? ', function(ok){\n  console.log(' got %j', ok);\n});\n```\n\n## .choose(list, fn)\n\n Let the user choose from a `list`:\n\n```js\nvar list = ['tobi', 'loki', 'jane', 'manny', 'luna'];\n\nconsole.log('Choose the coolest pet:');\nprogram.choose(list, function(i){\n  console.log('you chose %d \"%s\"', i, list[i]);\n});\n```\n\n## Links\n\n - [API documentation](http://visionmedia.github.com/commander.js/)\n - [ascii tables](https://github.com/LearnBoost/cli-table)\n - [progress bars](https://github.com/visionmedia/node-progress)\n - [more progress bars](https://github.com/substack/node-multimeter)\n - [examples](https://github.com/visionmedia/commander.js/tree/master/examples)\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb017580-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.6.1": {
+        "name": "commander",
+        "version": "0.6.1",
+        "description": "the complete solution for node.js command-line programs",
+        "keywords": [
+          "command",
+          "option",
+          "parser",
+          "prompt",
+          "stdin"
+        ],
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/visionmedia/commander.js.git"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "should": ">= 0.0.1"
+        },
+        "scripts": {
+          "test": "make test"
+        },
+        "main": "index",
+        "engines": {
+          "node": ">= 0.4.x"
+        },
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "_id": "commander@0.6.1",
+        "optionalDependencies": {},
+        "_engineSupported": true,
+        "_npmVersion": "1.1.0-3",
+        "_nodeVersion": "v0.6.12",
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06",
+          "tarball": "http://registry.npmjs.org/commander/-/commander-0.6.1.tgz"
+        },
+        "readme": "# Commander.js\n\n  The complete solution for [node.js](http://nodejs.org) command-line interfaces, inspired by Ruby's [commander](https://github.com/visionmedia/commander).\n\n [![Build Status](https://secure.travis-ci.org/visionmedia/commander.js.png)](http://travis-ci.org/visionmedia/commander.js)\n\n## Installation\n\n    $ npm install commander\n\n## Option parsing\n\n Options with commander are defined with the `.option()` method, also serving as documentation for the options. The example below parses args and options from `process.argv`, leaving remaining args as the `program.args` array which were not consumed by options.\n\n```js\n#!/usr/bin/env node\n\n/**\n * Module dependencies.\n */\n\nvar program = require('commander');\n\nprogram\n  .version('0.0.1')\n  .option('-p, --peppers', 'Add peppers')\n  .option('-P, --pineapple', 'Add pineapple')\n  .option('-b, --bbq', 'Add bbq sauce')\n  .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')\n  .parse(process.argv);\n\nconsole.log('you ordered a pizza with:');\nif (program.peppers) console.log('  - peppers');\nif (program.pineapple) console.log('  - pineappe');\nif (program.bbq) console.log('  - bbq');\nconsole.log('  - %s cheese', program.cheese);\n```\n\n Short flags may be passed as a single arg, for example `-abc` is equivalent to `-a -b -c`. Multi-word options such as \"--template-engine\" are camel-cased, becoming `program.templateEngine` etc.\n\n## Automated --help\n\n The help information is auto-generated based on the information commander already knows about your program, so the following `--help` info is for free:\n\n```  \n $ ./examples/pizza --help\n\n   Usage: pizza [options]\n\n   Options:\n\n     -V, --version        output the version number\n     -p, --peppers        Add peppers\n     -P, --pineapple      Add pineappe\n     -b, --bbq            Add bbq sauce\n     -c, --cheese <type>  Add the specified type of cheese [marble]\n     -h, --help           output usage information\n\n```\n\n## Coercion\n\n```js\nfunction range(val) {\n  return val.split('..').map(Number);\n}\n\nfunction list(val) {\n  return val.split(',');\n}\n\nprogram\n  .version('0.0.1')\n  .usage('[options] <file ...>')\n  .option('-i, --integer <n>', 'An integer argument', parseInt)\n  .option('-f, --float <n>', 'A float argument', parseFloat)\n  .option('-r, --range <a>..<b>', 'A range', range)\n  .option('-l, --list <items>', 'A list', list)\n  .option('-o, --optional [value]', 'An optional value')\n  .parse(process.argv);\n\nconsole.log(' int: %j', program.integer);\nconsole.log(' float: %j', program.float);\nconsole.log(' optional: %j', program.optional);\nprogram.range = program.range || [];\nconsole.log(' range: %j..%j', program.range[0], program.range[1]);\nconsole.log(' list: %j', program.list);\nconsole.log(' args: %j', program.args);\n```\n\n## Custom help\n\n You can display arbitrary `-h, --help` information\n by listening for \"--help\". Commander will automatically\n exit once you are done so that the remainder of your program\n does not execute causing undesired behaviours, for example\n in the following executable \"stuff\" will not output when\n `--help` is used.\n\n```js\n#!/usr/bin/env node\n\n/**\n * Module dependencies.\n */\n\nvar program = require('../');\n\nfunction list(val) {\n  return val.split(',').map(Number);\n}\n\nprogram\n  .version('0.0.1')\n  .option('-f, --foo', 'enable some foo')\n  .option('-b, --bar', 'enable some bar')\n  .option('-B, --baz', 'enable some baz');\n\n// must be before .parse() since\n// node's emit() is immediate\n\nprogram.on('--help', function(){\n  console.log('  Examples:');\n  console.log('');\n  console.log('    $ custom-help --help');\n  console.log('    $ custom-help -h');\n  console.log('');\n});\n\nprogram.parse(process.argv);\n\nconsole.log('stuff');\n```\n\nyielding the following help output:\n\n```\n\nUsage: custom-help [options]\n\nOptions:\n\n  -h, --help     output usage information\n  -V, --version  output the version number\n  -f, --foo      enable some foo\n  -b, --bar      enable some bar\n  -B, --baz      enable some baz\n\nExamples:\n\n  $ custom-help --help\n  $ custom-help -h\n\n```\n\n## .prompt(msg, fn)\n\n Single-line prompt:\n\n```js\nprogram.prompt('name: ', function(name){\n  console.log('hi %s', name);\n});\n```\n\n Multi-line prompt:\n\n```js\nprogram.prompt('description:', function(name){\n  console.log('hi %s', name);\n});\n```\n\n Coercion:\n\n```js\nprogram.prompt('Age: ', Number, function(age){\n  console.log('age: %j', age);\n});\n```\n\n```js\nprogram.prompt('Birthdate: ', Date, function(date){\n  console.log('date: %s', date);\n});\n```\n\n## .password(msg[, mask], fn)\n\nPrompt for password without echoing:\n\n```js\nprogram.password('Password: ', function(pass){\n  console.log('got \"%s\"', pass);\n  process.stdin.destroy();\n});\n```\n\nPrompt for password with mask char \"*\":\n\n```js\nprogram.password('Password: ', '*', function(pass){\n  console.log('got \"%s\"', pass);\n  process.stdin.destroy();\n});\n```\n\n## .confirm(msg, fn)\n\n Confirm with the given `msg`:\n\n```js\nprogram.confirm('continue? ', function(ok){\n  console.log(' got %j', ok);\n});\n```\n\n## .choose(list, fn)\n\n Let the user choose from a `list`:\n\n```js\nvar list = ['tobi', 'loki', 'jane', 'manny', 'luna'];\n\nconsole.log('Choose the coolest pet:');\nprogram.choose(list, function(i){\n  console.log('you chose %d \"%s\"', i, list[i]);\n});\n```\n\n## Links\n\n - [API documentation](http://visionmedia.github.com/commander.js/)\n - [ascii tables](https://github.com/LearnBoost/cli-table)\n - [progress bars](https://github.com/visionmedia/node-progress)\n - [more progress bars](https://github.com/substack/node-multimeter)\n - [examples](https://github.com/visionmedia/commander.js/tree/master/examples)\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.6.1"
+    }
+  },
+  "connect": {
+    "name": "connect",
+    "version": "2.7.5",
+    "description": "High performance middleware framework",
+    "keywords": [
+      "framework",
+      "web",
+      "middleware",
+      "connect",
+      "rack"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/senchalabs/connect.git"
+    },
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca",
+      "url": "http://tjholowaychuk.com"
+    },
+    "dependencies": {
+      "qs": "0.5.1",
+      "formidable": "1.0.11",
+      "cookie-signature": "1.0.0",
+      "buffer-crc32": "0.1.1",
+      "cookie": "0.0.5",
+      "send": "0.1.0",
+      "bytes": "0.2.0",
+      "fresh": "0.1.0",
+      "pause": "0.0.1",
+      "debug": "*"
+    },
+    "devDependencies": {
+      "should": "*",
+      "mocha": "*",
+      "jade": "*",
+      "dox": "*"
+    },
+    "main": "index",
+    "engines": {
+      "node": ">= 0.5.0"
+    },
+    "scripts": {
+      "test": "make"
+    },
+    "readme": "[![build status](https://secure.travis-ci.org/senchalabs/connect.png)](http://travis-ci.org/senchalabs/connect)\n# Connect\n\n  Connect is an extensible HTTP server framework for [node](http://nodejs.org), providing high performance \"plugins\" known as _middleware_.\n\n Connect is bundled with over _20_ commonly used middleware, including\n a logger, session support, cookie parser, and [more](http://senchalabs.github.com/connect). Be sure to view the 2.x [documentation](http://senchalabs.github.com/connect/).\n\n```js\nvar connect = require('connect')\n  , http = require('http');\n\nvar app = connect()\n  .use(connect.favicon())\n  .use(connect.logger('dev'))\n  .use(connect.static('public'))\n  .use(connect.directory('public'))\n  .use(connect.cookieParser())\n  .use(connect.session({ secret: 'my secret here' }))\n  .use(function(req, res){\n    res.end('Hello from Connect!\\n');\n  });\n\nhttp.createServer(app).listen(3000);\n```\n\n## Middleware\n\n  - [csrf](http://www.senchalabs.org/connect/csrf.html)\n  - [basicAuth](http://www.senchalabs.org/connect/basicAuth.html)\n  - [bodyParser](http://www.senchalabs.org/connect/bodyParser.html)\n  - [json](http://www.senchalabs.org/connect/json.html)\n  - [multipart](http://www.senchalabs.org/connect/multipart.html)\n  - [urlencoded](http://www.senchalabs.org/connect/urlencoded.html)\n  - [cookieParser](http://www.senchalabs.org/connect/cookieParser.html)\n  - [directory](http://www.senchalabs.org/connect/directory.html)\n  - [compress](http://www.senchalabs.org/connect/compress.html)\n  - [errorHandler](http://www.senchalabs.org/connect/errorHandler.html)\n  - [favicon](http://www.senchalabs.org/connect/favicon.html)\n  - [limit](http://www.senchalabs.org/connect/limit.html)\n  - [logger](http://www.senchalabs.org/connect/logger.html)\n  - [methodOverride](http://www.senchalabs.org/connect/methodOverride.html)\n  - [query](http://www.senchalabs.org/connect/query.html)\n  - [responseTime](http://www.senchalabs.org/connect/responseTime.html)\n  - [session](http://www.senchalabs.org/connect/session.html)\n  - [static](http://www.senchalabs.org/connect/static.html)\n  - [staticCache](http://www.senchalabs.org/connect/staticCache.html)\n  - [vhost](http://www.senchalabs.org/connect/vhost.html)\n  - [subdomains](http://www.senchalabs.org/connect/subdomains.html)\n  - [cookieSession](http://www.senchalabs.org/connect/cookieSession.html)\n\n## Running Tests\n\nfirst:\n\n    $ npm install -d\n\nthen:\n\n    $ make test\n\n## Authors\n\n Below is the output from [git-summary](http://github.com/visionmedia/git-extras).\n\n\n     project: connect\n     commits: 2033\n     active : 301 days\n     files  : 171\n     authors: \n      1414\tTj Holowaychuk          69.6%\n       298\tvisionmedia             14.7%\n       191\tTim Caswell             9.4%\n        51\tTJ Holowaychuk          2.5%\n        10\tRyan Olds               0.5%\n         8\tAstro                   0.4%\n         5\tNathan Rajlich          0.2%\n         5\tJakub Nešetřil          0.2%\n         3\tDaniel Dickison         0.1%\n         3\tDavid Rio Deiros        0.1%\n         3\tAlexander Simmerl       0.1%\n         3\tAndreas Lind Petersen   0.1%\n         2\tAaron Heckmann          0.1%\n         2\tJacques Crocker         0.1%\n         2\tFabian Jakobs           0.1%\n         2\tBrian J Brennan         0.1%\n         2\tAdam Malcontenti-Wilson 0.1%\n         2\tGlen Mailer             0.1%\n         2\tJames Campos            0.1%\n         1\tTrent Mick              0.0%\n         1\tTroy Kruthoff           0.0%\n         1\tWei Zhu                 0.0%\n         1\tcomerc                  0.0%\n         1\tdarobin                 0.0%\n         1\tnateps                  0.0%\n         1\tMarco Sanson            0.0%\n         1\tArthur Taylor           0.0%\n         1\tAseem Kishore           0.0%\n         1\tBart Teeuwisse          0.0%\n         1\tCameron Howey           0.0%\n         1\tChad Weider             0.0%\n         1\tCraig Barnes            0.0%\n         1\tEran Hammer-Lahav       0.0%\n         1\tGregory McWhirter       0.0%\n         1\tGuillermo Rauch         0.0%\n         1\tJae Kwon                0.0%\n         1\tJakub Nesetril          0.0%\n         1\tJoshua Peek             0.0%\n         1\tJxck                    0.0%\n         1\tAJ ONeal                0.0%\n         1\tMichael Hemesath        0.0%\n         1\tMorten Siebuhr          0.0%\n         1\tSamori Gorse            0.0%\n         1\tTom Jensen              0.0%\n\n## Node Compatibility\n\n  Connect `< 1.x` is compatible with node 0.2.x\n\n\n  Connect `1.x` is compatible with node 0.4.x\n\n\n  Connect (_master_) `2.x` is compatible with node 0.6.x\n\n## CLA\n\n [http://sencha.com/cla](http://sencha.com/cla)\n\n## License\n\nView the [LICENSE](https://github.com/senchalabs/connect/blob/master/LICENSE) file. The [Silk](http://www.famfamfam.com/lab/icons/silk/) icons used by the `directory` middleware created by/copyright of [FAMFAMFAM](http://www.famfamfam.com/).\n",
+    "readmeFilename": "Readme.md",
+    "_id": "connect",
+    "dist": {
+      "shasum": "139111b4b03f0533a524927a88a646ae467b2c02",
+      "tarball": "http://registry.npmjs.org/connect/-/connect-2.7.5.tgz"
+    },
+    "_from": ".",
+    "_npmVersion": "1.2.14",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      },
+      {
+        "name": "creationix",
+        "email": "tim@creationix.com"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb019c90-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "2.7.5": {
+        "name": "connect",
+        "version": "2.7.5",
+        "description": "High performance middleware framework",
+        "keywords": [
+          "framework",
+          "web",
+          "middleware",
+          "connect",
+          "rack"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/senchalabs/connect.git"
+        },
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca",
+          "url": "http://tjholowaychuk.com"
+        },
+        "dependencies": {
+          "qs": "0.5.1",
+          "formidable": "1.0.11",
+          "cookie-signature": "1.0.0",
+          "buffer-crc32": "0.1.1",
+          "cookie": "0.0.5",
+          "send": "0.1.0",
+          "bytes": "0.2.0",
+          "fresh": "0.1.0",
+          "pause": "0.0.1",
+          "debug": "*"
+        },
+        "devDependencies": {
+          "should": "*",
+          "mocha": "*",
+          "jade": "*",
+          "dox": "*"
+        },
+        "main": "index",
+        "engines": {
+          "node": ">= 0.5.0"
+        },
+        "scripts": {
+          "test": "make"
+        },
+        "readme": "[![build status](https://secure.travis-ci.org/senchalabs/connect.png)](http://travis-ci.org/senchalabs/connect)\n# Connect\n\n  Connect is an extensible HTTP server framework for [node](http://nodejs.org), providing high performance \"plugins\" known as _middleware_.\n\n Connect is bundled with over _20_ commonly used middleware, including\n a logger, session support, cookie parser, and [more](http://senchalabs.github.com/connect). Be sure to view the 2.x [documentation](http://senchalabs.github.com/connect/).\n\n```js\nvar connect = require('connect')\n  , http = require('http');\n\nvar app = connect()\n  .use(connect.favicon())\n  .use(connect.logger('dev'))\n  .use(connect.static('public'))\n  .use(connect.directory('public'))\n  .use(connect.cookieParser())\n  .use(connect.session({ secret: 'my secret here' }))\n  .use(function(req, res){\n    res.end('Hello from Connect!\\n');\n  });\n\nhttp.createServer(app).listen(3000);\n```\n\n## Middleware\n\n  - [csrf](http://www.senchalabs.org/connect/csrf.html)\n  - [basicAuth](http://www.senchalabs.org/connect/basicAuth.html)\n  - [bodyParser](http://www.senchalabs.org/connect/bodyParser.html)\n  - [json](http://www.senchalabs.org/connect/json.html)\n  - [multipart](http://www.senchalabs.org/connect/multipart.html)\n  - [urlencoded](http://www.senchalabs.org/connect/urlencoded.html)\n  - [cookieParser](http://www.senchalabs.org/connect/cookieParser.html)\n  - [directory](http://www.senchalabs.org/connect/directory.html)\n  - [compress](http://www.senchalabs.org/connect/compress.html)\n  - [errorHandler](http://www.senchalabs.org/connect/errorHandler.html)\n  - [favicon](http://www.senchalabs.org/connect/favicon.html)\n  - [limit](http://www.senchalabs.org/connect/limit.html)\n  - [logger](http://www.senchalabs.org/connect/logger.html)\n  - [methodOverride](http://www.senchalabs.org/connect/methodOverride.html)\n  - [query](http://www.senchalabs.org/connect/query.html)\n  - [responseTime](http://www.senchalabs.org/connect/responseTime.html)\n  - [session](http://www.senchalabs.org/connect/session.html)\n  - [static](http://www.senchalabs.org/connect/static.html)\n  - [staticCache](http://www.senchalabs.org/connect/staticCache.html)\n  - [vhost](http://www.senchalabs.org/connect/vhost.html)\n  - [subdomains](http://www.senchalabs.org/connect/subdomains.html)\n  - [cookieSession](http://www.senchalabs.org/connect/cookieSession.html)\n\n## Running Tests\n\nfirst:\n\n    $ npm install -d\n\nthen:\n\n    $ make test\n\n## Authors\n\n Below is the output from [git-summary](http://github.com/visionmedia/git-extras).\n\n\n     project: connect\n     commits: 2033\n     active : 301 days\n     files  : 171\n     authors: \n      1414\tTj Holowaychuk          69.6%\n       298\tvisionmedia             14.7%\n       191\tTim Caswell             9.4%\n        51\tTJ Holowaychuk          2.5%\n        10\tRyan Olds               0.5%\n         8\tAstro                   0.4%\n         5\tNathan Rajlich          0.2%\n         5\tJakub Nešetřil          0.2%\n         3\tDaniel Dickison         0.1%\n         3\tDavid Rio Deiros        0.1%\n         3\tAlexander Simmerl       0.1%\n         3\tAndreas Lind Petersen   0.1%\n         2\tAaron Heckmann          0.1%\n         2\tJacques Crocker         0.1%\n         2\tFabian Jakobs           0.1%\n         2\tBrian J Brennan         0.1%\n         2\tAdam Malcontenti-Wilson 0.1%\n         2\tGlen Mailer             0.1%\n         2\tJames Campos            0.1%\n         1\tTrent Mick              0.0%\n         1\tTroy Kruthoff           0.0%\n         1\tWei Zhu                 0.0%\n         1\tcomerc                  0.0%\n         1\tdarobin                 0.0%\n         1\tnateps                  0.0%\n         1\tMarco Sanson            0.0%\n         1\tArthur Taylor           0.0%\n         1\tAseem Kishore           0.0%\n         1\tBart Teeuwisse          0.0%\n         1\tCameron Howey           0.0%\n         1\tChad Weider             0.0%\n         1\tCraig Barnes            0.0%\n         1\tEran Hammer-Lahav       0.0%\n         1\tGregory McWhirter       0.0%\n         1\tGuillermo Rauch         0.0%\n         1\tJae Kwon                0.0%\n         1\tJakub Nesetril          0.0%\n         1\tJoshua Peek             0.0%\n         1\tJxck                    0.0%\n         1\tAJ ONeal                0.0%\n         1\tMichael Hemesath        0.0%\n         1\tMorten Siebuhr          0.0%\n         1\tSamori Gorse            0.0%\n         1\tTom Jensen              0.0%\n\n## Node Compatibility\n\n  Connect `< 1.x` is compatible with node 0.2.x\n\n\n  Connect `1.x` is compatible with node 0.4.x\n\n\n  Connect (_master_) `2.x` is compatible with node 0.6.x\n\n## CLA\n\n [http://sencha.com/cla](http://sencha.com/cla)\n\n## License\n\nView the [LICENSE](https://github.com/senchalabs/connect/blob/master/LICENSE) file. The [Silk](http://www.famfamfam.com/lab/icons/silk/) icons used by the `directory` middleware created by/copyright of [FAMFAMFAM](http://www.famfamfam.com/).\n",
+        "readmeFilename": "Readme.md",
+        "_id": "connect@2.7.5",
+        "dist": {
+          "shasum": "139111b4b03f0533a524927a88a646ae467b2c02",
+          "tarball": "http://registry.npmjs.org/connect/-/connect-2.7.5.tgz"
+        },
+        "_from": ".",
+        "_npmVersion": "1.2.14",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          },
+          {
+            "name": "creationix",
+            "email": "tim@creationix.com"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "2.7.5"
+    }
+  },
+  "cookie-signature": {
+    "name": "cookie-signature",
+    "version": "1.0.0",
+    "description": "Sign and unsign cookies",
+    "keywords": [
+      "cookie",
+      "sign",
+      "unsign"
+    ],
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@learnboost.com"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+    },
+    "main": "index",
+    "readme": "\n# cookie-signature\n\n  Sign and unsign cookies.\n\n## Example\n\n```js\nvar cookie = require('cookie-signature');\n\nvar val = cookie.sign('hello', 'tobiiscool');\nval.should.equal('hello.DGDUkGlIkCzPz+C0B064FNgHdEjox7ch8tOBGslZ5QI');\n\nvar val = cookie.sign('hello', 'tobiiscool');\ncookie.unsign(val, 'tobiiscool').should.equal('hello');\ncookie.unsign(val, 'luna').should.be.false;\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 LearnBoost &lt;tj@learnboost.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "readmeFilename": "Readme.md",
+    "_id": "cookie-signature",
+    "dist": {
+      "shasum": "0044f332ac623df851c914e88eacc57f0c9704fe",
+      "tarball": "http://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.0.tgz"
+    },
+    "_from": ".",
+    "_npmVersion": "1.2.14",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb01c3a0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "1.0.0": {
+        "name": "cookie-signature",
+        "version": "1.0.0",
+        "description": "Sign and unsign cookies",
+        "keywords": [
+          "cookie",
+          "sign",
+          "unsign"
+        ],
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@learnboost.com"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "*",
+          "should": "*"
+        },
+        "main": "index",
+        "readme": "\n# cookie-signature\n\n  Sign and unsign cookies.\n\n## Example\n\n```js\nvar cookie = require('cookie-signature');\n\nvar val = cookie.sign('hello', 'tobiiscool');\nval.should.equal('hello.DGDUkGlIkCzPz+C0B064FNgHdEjox7ch8tOBGslZ5QI');\n\nvar val = cookie.sign('hello', 'tobiiscool');\ncookie.unsign(val, 'tobiiscool').should.equal('hello');\ncookie.unsign(val, 'luna').should.be.false;\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 LearnBoost &lt;tj@learnboost.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "readmeFilename": "Readme.md",
+        "_id": "cookie-signature@1.0.0",
+        "dist": {
+          "shasum": "0044f332ac623df851c914e88eacc57f0c9704fe",
+          "tarball": "http://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.0.tgz"
+        },
+        "_from": ".",
+        "_npmVersion": "1.2.14",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "1.0.0"
+    }
+  },
+  "cookie": {
+    "author": {
+      "name": "Roman Shtylman",
+      "email": "shtylman@gmail.com"
+    },
+    "name": "cookie",
+    "description": "cookie parsing and serialization",
+    "version": "0.0.5",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/shtylman/node-cookie.git"
+    },
+    "keywords": [
+      "cookie",
+      "cookies"
+    ],
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "1.x.x"
+    },
+    "optionalDependencies": {},
+    "engines": {
+      "node": "*"
+    },
+    "readme": "# cookie [![Build Status](https://secure.travis-ci.org/shtylman/node-cookie.png?branch=master)](http://travis-ci.org/shtylman/node-cookie) #\n\ncookie is a basic cookie parser and serializer. It doesn't make assumptions about how you are going to deal with your cookies. It basically just provides a way to read and write the HTTP cookie headers.\n\nSee [RFC6265](http://tools.ietf.org/html/rfc6265) for details about the http header for cookies.\n\n## how?\n\n```\nnpm install cookie\n```\n\n```javascript\nvar cookie = require('cookie');\n\nvar hdr = cookie.serialize('foo', 'bar');\n// hdr = 'foo=bar';\n\nvar cookies = cookie.parse('foo=bar; cat=meow; dog=ruff');\n// cookies = { foo: 'bar', cat: 'meow', dog: 'ruff' };\n```\n\n## more\n\nThe serialize function takes a third parameter, an object, to set cookie options. See the RFC for valid values.\n\n### path\n> cookie path\n\n### expires\n> absolute expiration date for the cookie (Date object)\n\n### maxAge\n> relative max age of the cookie from when the client receives it (seconds)\n\n### domain\n> domain for the cookie\n\n### secure\n> true or false\n\n### httpOnly\n> true or false\n\n",
+    "_id": "cookie",
+    "dist": {
+      "shasum": "f9acf9db57eb7568c9fcc596256b7bb22e307c81",
+      "tarball": "http://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "shtylman",
+        "email": "shtylman@gmail.com"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb01eab0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.0.5": {
+        "author": {
+          "name": "Roman Shtylman",
+          "email": "shtylman@gmail.com"
+        },
+        "name": "cookie",
+        "description": "cookie parsing and serialization",
+        "version": "0.0.5",
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/shtylman/node-cookie.git"
+        },
+        "keywords": [
+          "cookie",
+          "cookies"
+        ],
+        "main": "index.js",
+        "scripts": {
+          "test": "mocha"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "1.x.x"
+        },
+        "optionalDependencies": {},
+        "engines": {
+          "node": "*"
+        },
+        "readme": "# cookie [![Build Status](https://secure.travis-ci.org/shtylman/node-cookie.png?branch=master)](http://travis-ci.org/shtylman/node-cookie) #\n\ncookie is a basic cookie parser and serializer. It doesn't make assumptions about how you are going to deal with your cookies. It basically just provides a way to read and write the HTTP cookie headers.\n\nSee [RFC6265](http://tools.ietf.org/html/rfc6265) for details about the http header for cookies.\n\n## how?\n\n```\nnpm install cookie\n```\n\n```javascript\nvar cookie = require('cookie');\n\nvar hdr = cookie.serialize('foo', 'bar');\n// hdr = 'foo=bar';\n\nvar cookies = cookie.parse('foo=bar; cat=meow; dog=ruff');\n// cookies = { foo: 'bar', cat: 'meow', dog: 'ruff' };\n```\n\n## more\n\nThe serialize function takes a third parameter, an object, to set cookie options. See the RFC for valid values.\n\n### path\n> cookie path\n\n### expires\n> absolute expiration date for the cookie (Date object)\n\n### maxAge\n> relative max age of the cookie from when the client receives it (seconds)\n\n### domain\n> domain for the cookie\n\n### secure\n> true or false\n\n### httpOnly\n> true or false\n\n",
+        "_id": "cookie@0.0.5",
+        "dist": {
+          "shasum": "f9acf9db57eb7568c9fcc596256b7bb22e307c81",
+          "tarball": "http://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz"
+        },
+        "maintainers": [
+          {
+            "name": "shtylman",
+            "email": "shtylman@gmail.com"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.0.5"
+    }
+  },
+  "debug": {
+    "name": "debug",
+    "version": "0.7.3",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/visionmedia/debug.git"
+    },
+    "description": "small debugging utility",
+    "keywords": [
+      "debug",
+      "log",
+      "debugger"
+    ],
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "*"
+    },
+    "main": "lib/debug.js",
+    "browserify": "debug.js",
+    "browser": "./debug.js",
+    "engines": {
+      "node": "*"
+    },
+    "files": [
+      "lib/debug.js",
+      "debug.js",
+      "index.js"
+    ],
+    "component": {
+      "scripts": {
+        "debug/index.js": "index.js",
+        "debug/debug.js": "debug.js"
+      }
+    },
+    "readme": "# debug\n\n  tiny node.js debugging utility modelled after node core's debugging technique.\n\n## Installation\n\n```\n$ npm install debug\n```\n\n## Usage\n\n With `debug` you simply invoke the exported function to generate your debug function, passing it a name which will determine if a noop function is returned, or a decorated `console.error`, so all of the `console` format string goodies you're used to work fine. A unique color is selected per-function for visibility.\n \nExample _app.js_:\n\n```js\nvar debug = require('debug')('http')\n  , http = require('http')\n  , name = 'My App';\n\n// fake app\n\ndebug('booting %s', name);\n\nhttp.createServer(function(req, res){\n  debug(req.method + ' ' + req.url);\n  res.end('hello\\n');\n}).listen(3000, function(){\n  debug('listening');\n});\n\n// fake worker of some kind\n\nrequire('./worker');\n```\n\nExample _worker.js_:\n\n```js\nvar debug = require('debug')('worker');\n\nsetInterval(function(){\n  debug('doing some work');\n}, 1000);\n```\n\n The __DEBUG__ environment variable is then used to enable these based on space or comma-delimited names. Here are some examples:\n\n  ![debug http and worker](http://f.cl.ly/items/18471z1H402O24072r1J/Screenshot.png)\n\n  ![debug worker](http://f.cl.ly/items/1X413v1a3M0d3C2c1E0i/Screenshot.png)\n\n## Millisecond diff\n\n  When actively developing an application it can be useful to see when the time spent between one `debug()` call and the next. Suppose for example you invoke `debug()` before requesting a resource, and after as well, the \"+NNNms\" will show you how much time was spent between calls.\n\n  ![](http://f.cl.ly/items/2i3h1d3t121M2Z1A3Q0N/Screenshot.png)\n\n  When stderr is not a TTY, `Date#toUTCString()` is used, making it more useful for logging the debug information as shown below:\n  _(NOTE: Debug now uses stderr instead of stdout, so the correct shell command for this example is actually `DEBUG=* node example/worker 2> out &`)_\n  \n  ![](http://f.cl.ly/items/112H3i0e0o0P0a2Q2r11/Screenshot.png)\n  \n## Conventions\n\n If you're using this in one or more of your libraries, you _should_ use the name of your library so that developers may toggle debugging as desired without guessing names. If you have more than one debuggers you _should_ prefix them with your library name and use \":\" to separate features. For example \"bodyParser\" from Connect would then be \"connect:bodyParser\". \n\n## Wildcards\n\n  The \"*\" character may be used as a wildcard. Suppose for example your library has debuggers named \"connect:bodyParser\", \"connect:compress\", \"connect:session\", instead of listing all three with `DEBUG=connect:bodyParser,connect.compress,connect:session`, you may simply do `DEBUG=connect:*`, or to run everything using this module simply use `DEBUG=*`.\n\n  You can also exclude specific debuggers by prefixing them with a \"-\" character.  For example, `DEBUG=* -connect:*` would include all debuggers except those starting with \"connect:\".\n\n## Browser support\n\n Debug works in the browser as well, currently persisted by `localStorage`. For example if you have `worker:a` and `worker:b` as shown below, and wish to debug both type `debug.enable('worker:*')` in the console and refresh the page, this will remain until you disable with `debug.disable()`. \n\n```js\na = debug('worker:a');\nb = debug('worker:b');\n\nsetInterval(function(){\n  a('doing some work');\n}, 1000);\n\nsetInterval(function(){\n  a('doing some work');\n}, 1200);\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+    "readmeFilename": "Readme.md",
+    "bugs": {
+      "url": "https://github.com/visionmedia/debug/issues"
+    },
+    "_id": "debug",
+    "dist": {
+      "shasum": "ba7ae369799066a28d234fb8dad6f05837839da8",
+      "tarball": "http://registry.npmjs.org/debug/-/debug-0.7.3.tgz"
+    },
+    "_from": ".",
+    "_npmVersion": "1.3.8",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb01eab1-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.7.3": {
+        "name": "debug",
+        "version": "0.7.3",
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/visionmedia/debug.git"
+        },
+        "description": "small debugging utility",
+        "keywords": [
+          "debug",
+          "log",
+          "debugger"
+        ],
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "*"
+        },
+        "main": "lib/debug.js",
+        "browserify": "debug.js",
+        "browser": "./debug.js",
+        "engines": {
+          "node": "*"
+        },
+        "files": [
+          "lib/debug.js",
+          "debug.js",
+          "index.js"
+        ],
+        "component": {
+          "scripts": {
+            "debug/index.js": "index.js",
+            "debug/debug.js": "debug.js"
+          }
+        },
+        "readme": "# debug\n\n  tiny node.js debugging utility modelled after node core's debugging technique.\n\n## Installation\n\n```\n$ npm install debug\n```\n\n## Usage\n\n With `debug` you simply invoke the exported function to generate your debug function, passing it a name which will determine if a noop function is returned, or a decorated `console.error`, so all of the `console` format string goodies you're used to work fine. A unique color is selected per-function for visibility.\n \nExample _app.js_:\n\n```js\nvar debug = require('debug')('http')\n  , http = require('http')\n  , name = 'My App';\n\n// fake app\n\ndebug('booting %s', name);\n\nhttp.createServer(function(req, res){\n  debug(req.method + ' ' + req.url);\n  res.end('hello\\n');\n}).listen(3000, function(){\n  debug('listening');\n});\n\n// fake worker of some kind\n\nrequire('./worker');\n```\n\nExample _worker.js_:\n\n```js\nvar debug = require('debug')('worker');\n\nsetInterval(function(){\n  debug('doing some work');\n}, 1000);\n```\n\n The __DEBUG__ environment variable is then used to enable these based on space or comma-delimited names. Here are some examples:\n\n  ![debug http and worker](http://f.cl.ly/items/18471z1H402O24072r1J/Screenshot.png)\n\n  ![debug worker](http://f.cl.ly/items/1X413v1a3M0d3C2c1E0i/Screenshot.png)\n\n## Millisecond diff\n\n  When actively developing an application it can be useful to see when the time spent between one `debug()` call and the next. Suppose for example you invoke `debug()` before requesting a resource, and after as well, the \"+NNNms\" will show you how much time was spent between calls.\n\n  ![](http://f.cl.ly/items/2i3h1d3t121M2Z1A3Q0N/Screenshot.png)\n\n  When stderr is not a TTY, `Date#toUTCString()` is used, making it more useful for logging the debug information as shown below:\n  _(NOTE: Debug now uses stderr instead of stdout, so the correct shell command for this example is actually `DEBUG=* node example/worker 2> out &`)_\n  \n  ![](http://f.cl.ly/items/112H3i0e0o0P0a2Q2r11/Screenshot.png)\n  \n## Conventions\n\n If you're using this in one or more of your libraries, you _should_ use the name of your library so that developers may toggle debugging as desired without guessing names. If you have more than one debuggers you _should_ prefix them with your library name and use \":\" to separate features. For example \"bodyParser\" from Connect would then be \"connect:bodyParser\". \n\n## Wildcards\n\n  The \"*\" character may be used as a wildcard. Suppose for example your library has debuggers named \"connect:bodyParser\", \"connect:compress\", \"connect:session\", instead of listing all three with `DEBUG=connect:bodyParser,connect.compress,connect:session`, you may simply do `DEBUG=connect:*`, or to run everything using this module simply use `DEBUG=*`.\n\n  You can also exclude specific debuggers by prefixing them with a \"-\" character.  For example, `DEBUG=* -connect:*` would include all debuggers except those starting with \"connect:\".\n\n## Browser support\n\n Debug works in the browser as well, currently persisted by `localStorage`. For example if you have `worker:a` and `worker:b` as shown below, and wish to debug both type `debug.enable('worker:*')` in the console and refresh the page, this will remain until you disable with `debug.disable()`. \n\n```js\na = debug('worker:a');\nb = debug('worker:b');\n\nsetInterval(function(){\n  a('doing some work');\n}, 1000);\n\nsetInterval(function(){\n  a('doing some work');\n}, 1200);\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+        "readmeFilename": "Readme.md",
+        "bugs": {
+          "url": "https://github.com/visionmedia/debug/issues"
+        },
+        "_id": "debug@0.7.3",
+        "dist": {
+          "shasum": "ba7ae369799066a28d234fb8dad6f05837839da8",
+          "tarball": "http://registry.npmjs.org/debug/-/debug-0.7.3.tgz"
+        },
+        "_from": ".",
+        "_npmVersion": "1.3.8",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.7.3"
+    }
+  },
+  "express": {
+    "name": "express",
+    "description": "Sinatra inspired web development framework",
+    "version": "3.1.2",
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "contributors": [
+      {
+        "name": "TJ Holowaychuk",
+        "email": "tj@vision-media.ca"
+      },
+      {
+        "name": "Aaron Heckmann",
+        "email": "aaron.heckmann+github@gmail.com"
+      },
+      {
+        "name": "Ciaran Jessup",
+        "email": "ciaranj@gmail.com"
+      },
+      {
+        "name": "Guillermo Rauch",
+        "email": "rauchg@gmail.com"
+      }
+    ],
+    "dependencies": {
+      "connect": "2.7.5",
+      "commander": "0.6.1",
+      "range-parser": "0.0.4",
+      "mkdirp": "~0.3.4",
+      "cookie": "0.0.5",
+      "buffer-crc32": "~0.2.1",
+      "fresh": "0.1.0",
+      "methods": "0.0.1",
+      "send": "0.1.0",
+      "cookie-signature": "1.0.0",
+      "debug": "*"
+    },
+    "devDependencies": {
+      "ejs": "*",
+      "mocha": "*",
+      "jade": "*",
+      "hjs": "*",
+      "stylus": "*",
+      "should": "*",
+      "connect-redis": "*",
+      "github-flavored-markdown": "*",
+      "supertest": "0.0.1"
+    },
+    "keywords": [
+      "express",
+      "framework",
+      "sinatra",
+      "web",
+      "rest",
+      "restful",
+      "router",
+      "app",
+      "api"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/visionmedia/express"
+    },
+    "main": "index",
+    "bin": {
+      "express": "./bin/express"
+    },
+    "scripts": {
+      "prepublish": "npm prune",
+      "test": "make test"
+    },
+    "engines": {
+      "node": "*"
+    },
+    "readme": "![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org). [![Build Status](https://secure.travis-ci.org/visionmedia/express.png)](http://travis-ci.org/visionmedia/express) [![Dependency Status](https://gemnasium.com/visionmedia/express.png)](https://gemnasium.com/visionmedia/express)\n\n```js\nvar express = require('express');\nvar app = express();\n\napp.get('/', function(req, res){\n  res.send('Hello World');\n});\n\napp.listen(3000);\n```\n\n## Installation\n\n    $ npm install -g express\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Start the server:\n\n    $ node app\n\n## Features\n\n  * Built on [Connect](http://github.com/senchalabs/connect)\n  * Robust routing\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Focus on high performance\n  * Environment based configuration\n  * Executable for generating applications quickly\n  * High test coverage\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers. Making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n\n  Built on Connect you can use _only_ what you need, and nothing more, applications\n  can be as big or as small as you like, even a single file. Express does\n  not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js)\n  you can quickly craft your perfect framework.\n\n## More Information\n\n  * Join #express on freenode\n  * [Google Group](http://groups.google.com/group/express-js) for discussion\n  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates\n  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)\n  * [日本語ドキュメンテーション](http://hideyukisaito.com/doc/expressjs/) by [hideyukisaito](https://github.com/hideyukisaito)\n  * [Русскоязычная документация](http://jsman.ru/express/)\n  * Run express examples [online](https://runnable.com/express)\n\n## Viewing Examples\n\nClone the Express repo, then install the dev dependencies to install all the example / test suite deps:\n\n    $ git clone git://github.com/visionmedia/express.git --depth 1\n    $ cd express\n    $ npm install\n\nthen run whichever tests you want:\n\n    $ node examples/content-negotiation\n\n## Running Tests\n\nTo run the test suite first invoke the following command within the repo, installing the development dependencies:\n\n    $ npm install\n\nthen run the tests:\n\n    $ make test\n\n## Contributors\n\n```\nproject: express\ncommits: 3559\nactive : 468 days\nfiles  : 237\nauthors:\n 1891\tTj Holowaychuk          53.1%\n 1285\tvisionmedia             36.1%\n  182\tTJ Holowaychuk          5.1%\n   54\tAaron Heckmann          1.5%\n   34\tcsausdev                1.0%\n   26\tciaranj                 0.7%\n   21\tRobert Sköld            0.6%\n    6\tGuillermo Rauch         0.2%\n    3\tDav Glass               0.1%\n    3\tNick Poulden            0.1%\n    2\tRandy Merrill           0.1%\n    2\tBenny Wong              0.1%\n    2\tHunter Loftis           0.1%\n    2\tJake Gordon             0.1%\n    2\tBrian McKinney          0.1%\n    2\tRoman Shtylman          0.1%\n    2\tBen Weaver              0.1%\n    2\tDave Hoover             0.1%\n    2\tEivind Fjeldstad        0.1%\n    2\tDaniel Shaw             0.1%\n    1\tMatt Colyer             0.0%\n    1\tPau Ramon               0.0%\n    1\tPero Pejovic            0.0%\n    1\tPeter Rekdal Sunde      0.0%\n    1\tRaynos                  0.0%\n    1\tTeng Siong Ong          0.0%\n    1\tViktor Kelemen          0.0%\n    1\tctide                   0.0%\n    1\t8bitDesigner            0.0%\n    1\tisaacs                  0.0%\n    1\tmgutz                   0.0%\n    1\tpikeas                  0.0%\n    1\tshuwatto                0.0%\n    1\ttstrimple               0.0%\n    1\tewoudj                  0.0%\n    1\tAdam Sanderson          0.0%\n    1\tAndrii Kostenko         0.0%\n    1\tAndy Hiew               0.0%\n    1\tArpad Borsos            0.0%\n    1\tAshwin Purohit          0.0%\n    1\tBenjen                  0.0%\n    1\tDarren Torpey           0.0%\n    1\tGreg Ritter             0.0%\n    1\tGregory Ritter          0.0%\n    1\tJames Herdman           0.0%\n    1\tJim Snodgrass           0.0%\n    1\tJoe McCann              0.0%\n    1\tJonathan Dumaine        0.0%\n    1\tJonathan Palardy        0.0%\n    1\tJonathan Zacsh          0.0%\n    1\tJustin Lilly            0.0%\n    1\tKen Sato                0.0%\n    1\tMaciej Małecki          0.0%\n    1\tMasahiro Hayashi        0.0%\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+    "readmeFilename": "Readme.md",
+    "_id": "express",
+    "dist": {
+      "shasum": "52a02c8db8f22bbfa0d7478d847cd45161f985f7",
+      "tarball": "http://registry.npmjs.org/express/-/express-3.1.2.tgz"
+    },
+    "_from": ".",
+    "_npmVersion": "1.2.14",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb0238d0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "3.1.2": {
+        "name": "express",
+        "description": "Sinatra inspired web development framework",
+        "version": "3.1.2",
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "contributors": [
+          {
+            "name": "TJ Holowaychuk",
+            "email": "tj@vision-media.ca"
+          },
+          {
+            "name": "Aaron Heckmann",
+            "email": "aaron.heckmann+github@gmail.com"
+          },
+          {
+            "name": "Ciaran Jessup",
+            "email": "ciaranj@gmail.com"
+          },
+          {
+            "name": "Guillermo Rauch",
+            "email": "rauchg@gmail.com"
+          }
+        ],
+        "dependencies": {
+          "connect": "2.7.5",
+          "commander": "0.6.1",
+          "range-parser": "0.0.4",
+          "mkdirp": "~0.3.4",
+          "cookie": "0.0.5",
+          "buffer-crc32": "~0.2.1",
+          "fresh": "0.1.0",
+          "methods": "0.0.1",
+          "send": "0.1.0",
+          "cookie-signature": "1.0.0",
+          "debug": "*"
+        },
+        "devDependencies": {
+          "ejs": "*",
+          "mocha": "*",
+          "jade": "*",
+          "hjs": "*",
+          "stylus": "*",
+          "should": "*",
+          "connect-redis": "*",
+          "github-flavored-markdown": "*",
+          "supertest": "0.0.1"
+        },
+        "keywords": [
+          "express",
+          "framework",
+          "sinatra",
+          "web",
+          "rest",
+          "restful",
+          "router",
+          "app",
+          "api"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/visionmedia/express"
+        },
+        "main": "index",
+        "bin": {
+          "express": "./bin/express"
+        },
+        "scripts": {
+          "prepublish": "npm prune",
+          "test": "make test"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "readme": "![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org). [![Build Status](https://secure.travis-ci.org/visionmedia/express.png)](http://travis-ci.org/visionmedia/express) [![Dependency Status](https://gemnasium.com/visionmedia/express.png)](https://gemnasium.com/visionmedia/express)\n\n```js\nvar express = require('express');\nvar app = express();\n\napp.get('/', function(req, res){\n  res.send('Hello World');\n});\n\napp.listen(3000);\n```\n\n## Installation\n\n    $ npm install -g express\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Start the server:\n\n    $ node app\n\n## Features\n\n  * Built on [Connect](http://github.com/senchalabs/connect)\n  * Robust routing\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Focus on high performance\n  * Environment based configuration\n  * Executable for generating applications quickly\n  * High test coverage\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers. Making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n\n  Built on Connect you can use _only_ what you need, and nothing more, applications\n  can be as big or as small as you like, even a single file. Express does\n  not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js)\n  you can quickly craft your perfect framework.\n\n## More Information\n\n  * Join #express on freenode\n  * [Google Group](http://groups.google.com/group/express-js) for discussion\n  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates\n  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)\n  * [日本語ドキュメンテーション](http://hideyukisaito.com/doc/expressjs/) by [hideyukisaito](https://github.com/hideyukisaito)\n  * [Русскоязычная документация](http://jsman.ru/express/)\n  * Run express examples [online](https://runnable.com/express)\n\n## Viewing Examples\n\nClone the Express repo, then install the dev dependencies to install all the example / test suite deps:\n\n    $ git clone git://github.com/visionmedia/express.git --depth 1\n    $ cd express\n    $ npm install\n\nthen run whichever tests you want:\n\n    $ node examples/content-negotiation\n\n## Running Tests\n\nTo run the test suite first invoke the following command within the repo, installing the development dependencies:\n\n    $ npm install\n\nthen run the tests:\n\n    $ make test\n\n## Contributors\n\n```\nproject: express\ncommits: 3559\nactive : 468 days\nfiles  : 237\nauthors:\n 1891\tTj Holowaychuk          53.1%\n 1285\tvisionmedia             36.1%\n  182\tTJ Holowaychuk          5.1%\n   54\tAaron Heckmann          1.5%\n   34\tcsausdev                1.0%\n   26\tciaranj                 0.7%\n   21\tRobert Sköld            0.6%\n    6\tGuillermo Rauch         0.2%\n    3\tDav Glass               0.1%\n    3\tNick Poulden            0.1%\n    2\tRandy Merrill           0.1%\n    2\tBenny Wong              0.1%\n    2\tHunter Loftis           0.1%\n    2\tJake Gordon             0.1%\n    2\tBrian McKinney          0.1%\n    2\tRoman Shtylman          0.1%\n    2\tBen Weaver              0.1%\n    2\tDave Hoover             0.1%\n    2\tEivind Fjeldstad        0.1%\n    2\tDaniel Shaw             0.1%\n    1\tMatt Colyer             0.0%\n    1\tPau Ramon               0.0%\n    1\tPero Pejovic            0.0%\n    1\tPeter Rekdal Sunde      0.0%\n    1\tRaynos                  0.0%\n    1\tTeng Siong Ong          0.0%\n    1\tViktor Kelemen          0.0%\n    1\tctide                   0.0%\n    1\t8bitDesigner            0.0%\n    1\tisaacs                  0.0%\n    1\tmgutz                   0.0%\n    1\tpikeas                  0.0%\n    1\tshuwatto                0.0%\n    1\ttstrimple               0.0%\n    1\tewoudj                  0.0%\n    1\tAdam Sanderson          0.0%\n    1\tAndrii Kostenko         0.0%\n    1\tAndy Hiew               0.0%\n    1\tArpad Borsos            0.0%\n    1\tAshwin Purohit          0.0%\n    1\tBenjen                  0.0%\n    1\tDarren Torpey           0.0%\n    1\tGreg Ritter             0.0%\n    1\tGregory Ritter          0.0%\n    1\tJames Herdman           0.0%\n    1\tJim Snodgrass           0.0%\n    1\tJoe McCann              0.0%\n    1\tJonathan Dumaine        0.0%\n    1\tJonathan Palardy        0.0%\n    1\tJonathan Zacsh          0.0%\n    1\tJustin Lilly            0.0%\n    1\tKen Sato                0.0%\n    1\tMaciej Małecki          0.0%\n    1\tMasahiro Hayashi        0.0%\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+        "readmeFilename": "Readme.md",
+        "_id": "express@3.1.2",
+        "dist": {
+          "shasum": "52a02c8db8f22bbfa0d7478d847cd45161f985f7",
+          "tarball": "http://registry.npmjs.org/express/-/express-3.1.2.tgz"
+        },
+        "_from": ".",
+        "_npmVersion": "1.2.14",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "3.1.2"
+    }
+  },
+  "formidable": {
+    "name": "formidable",
+    "version": "1.0.11",
+    "dependencies": {},
+    "devDependencies": {
+      "gently": "0.8.0",
+      "findit": "0.1.1",
+      "hashish": "0.0.4",
+      "urun": "0.0.4",
+      "utest": "0.0.3"
+    },
+    "directories": {
+      "lib": "./lib"
+    },
+    "main": "./lib/index",
+    "scripts": {
+      "test": "make test"
+    },
+    "engines": {
+      "node": "*"
+    },
+    "optionalDependencies": {},
+    "_npmUser": {
+      "name": "felixge",
+      "email": "felix@debuggable.com"
+    },
+    "_id": "formidable",
+    "_engineSupported": true,
+    "_npmVersion": "1.1.21",
+    "_nodeVersion": "v0.6.18-pre",
+    "_defaultsLoaded": true,
+    "dist": {
+      "shasum": "68f63325a035e644b6f7bb3d11243b9761de1b30",
+      "tarball": "http://registry.npmjs.org/formidable/-/formidable-1.0.11.tgz"
+    },
+    "readme": "# Formidable\n\n[![Build Status](https://secure.travis-ci.org/felixge/node-formidable.png?branch=master)](http://travis-ci.org/felixge/node-formidable)\n\n## Purpose\n\nA node.js module for parsing form data, especially file uploads.\n\n## Current status\n\nThis module was developed for [Transloadit](http://transloadit.com/), a service focused on uploading\nand encoding images and videos. It has been battle-tested against hundreds of GB of file uploads from\na large variety of clients and is considered production-ready.\n\n## Features\n\n* Fast (~500mb/sec), non-buffering multipart parser\n* Automatically writing file uploads to disk\n* Low memory footprint\n* Graceful error handling\n* Very high test coverage\n\n## Changelog\n\n### v1.0.9\n\n* Emit progress when content length header parsed (Tim Koschützki)\n* Fix Readme syntax due to GitHub changes (goob)\n* Replace references to old 'sys' module in Readme with 'util' (Peter Sugihara)\n\n### v1.0.8\n\n* Strip potentially unsafe characters when using `keepExtensions: true`.\n* Switch to utest / urun for testing\n* Add travis build\n\n### v1.0.7\n\n* Remove file from package that was causing problems when installing on windows. (#102)\n* Fix typos in Readme (Jason Davies).\n\n### v1.0.6\n\n* Do not default to the default to the field name for file uploads where\n  filename=\"\".\n\n### v1.0.5\n\n* Support filename=\"\" in multipart parts\n* Explain unexpected end() errors in parser better\n\n**Note:** Starting with this version, formidable emits 'file' events for empty\nfile input fields. Previously those were incorrectly emitted as regular file\ninput fields with value = \"\".\n\n### v1.0.4\n\n* Detect a good default tmp directory regardless of platform. (#88)\n\n### v1.0.3\n\n* Fix problems with utf8 characters (#84) / semicolons in filenames (#58)\n* Small performance improvements\n* New test suite and fixture system\n\n### v1.0.2\n\n* Exclude node\\_modules folder from git\n* Implement new `'aborted'` event\n* Fix files in example folder to work with recent node versions\n* Make gently a devDependency\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v1.0.1...v1.0.2)\n\n### v1.0.1\n\n* Fix package.json to refer to proper main directory. (#68, Dean Landolt)\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v1.0.0...v1.0.1)\n\n### v1.0.0\n\n* Add support for multipart boundaries that are quoted strings. (Jeff Craig)\n\nThis marks the beginning of development on version 2.0 which will include\nseveral architectural improvements.\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v0.9.11...v1.0.0)\n\n### v0.9.11\n\n* Emit `'progress'` event when receiving data, regardless of parsing it. (Tim Koschützki)\n* Use [W3C FileAPI Draft](http://dev.w3.org/2006/webapi/FileAPI/) properties for File class\n\n**Important:** The old property names of the File class will be removed in a\nfuture release.\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v0.9.10...v0.9.11)\n\n### Older releases\n\nThese releases were done before starting to maintain the above Changelog:\n\n* [v0.9.10](https://github.com/felixge/node-formidable/compare/v0.9.9...v0.9.10)\n* [v0.9.9](https://github.com/felixge/node-formidable/compare/v0.9.8...v0.9.9)\n* [v0.9.8](https://github.com/felixge/node-formidable/compare/v0.9.7...v0.9.8)\n* [v0.9.7](https://github.com/felixge/node-formidable/compare/v0.9.6...v0.9.7)\n* [v0.9.6](https://github.com/felixge/node-formidable/compare/v0.9.5...v0.9.6)\n* [v0.9.5](https://github.com/felixge/node-formidable/compare/v0.9.4...v0.9.5)\n* [v0.9.4](https://github.com/felixge/node-formidable/compare/v0.9.3...v0.9.4)\n* [v0.9.3](https://github.com/felixge/node-formidable/compare/v0.9.2...v0.9.3)\n* [v0.9.2](https://github.com/felixge/node-formidable/compare/v0.9.1...v0.9.2)\n* [v0.9.1](https://github.com/felixge/node-formidable/compare/v0.9.0...v0.9.1)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.1.0](https://github.com/felixge/node-formidable/commits/v0.1.0)\n\n## Installation\n\nVia [npm](http://github.com/isaacs/npm):\n\n    npm install formidable@latest\n\nManually:\n\n    git clone git://github.com/felixge/node-formidable.git formidable\n    vim my.js\n    # var formidable = require('./formidable');\n\nNote: Formidable requires [gently](http://github.com/felixge/node-gently) to run the unit tests, but you won't need it for just using the library.\n\n## Example\n\nParse an incoming file upload.\n\n    var formidable = require('formidable'),\n        http = require('http'),\n\n        util = require('util');\n\n    http.createServer(function(req, res) {\n      if (req.url == '/upload' && req.method.toLowerCase() == 'post') {\n        // parse a file upload\n        var form = new formidable.IncomingForm();\n        form.parse(req, function(err, fields, files) {\n          res.writeHead(200, {'content-type': 'text/plain'});\n          res.write('received upload:\\n\\n');\n          res.end(util.inspect({fields: fields, files: files}));\n        });\n        return;\n      }\n\n      // show a file upload form\n      res.writeHead(200, {'content-type': 'text/html'});\n      res.end(\n        '<form action=\"/upload\" enctype=\"multipart/form-data\" method=\"post\">'+\n        '<input type=\"text\" name=\"title\"><br>'+\n        '<input type=\"file\" name=\"upload\" multiple=\"multiple\"><br>'+\n        '<input type=\"submit\" value=\"Upload\">'+\n        '</form>'\n      );\n    }).listen(80);\n\n## API\n\n### formidable.IncomingForm\n\n__new formidable.IncomingForm()__\n\nCreates a new incoming form.\n\n__incomingForm.encoding = 'utf-8'__\n\nThe encoding to use for incoming form fields.\n\n__incomingForm.uploadDir = process.env.TMP || '/tmp' || process.cwd()__\n\nThe directory for placing file uploads in. You can move them later on using\n`fs.rename()`. The default directory is picked at module load time depending on\nthe first existing directory from those listed above.\n\n__incomingForm.keepExtensions = false__\n\nIf you want the files written to `incomingForm.uploadDir` to include the extensions of the original files, set this property to `true`.\n\n__incomingForm.type__\n\nEither 'multipart' or 'urlencoded' depending on the incoming request.\n\n__incomingForm.maxFieldsSize = 2 * 1024 * 1024__\n\nLimits the amount of memory a field (not file) can allocate in bytes.\nIf this value is exceeded, an `'error'` event is emitted. The default\nsize is 2MB.\n\n__incomingForm.hash = false__\n\nIf you want checksums calculated for incoming files, set this to either `'sha1'` or `'md5'`.\n\n__incomingForm.bytesReceived__\n\nThe amount of bytes received for this form so far.\n\n__incomingForm.bytesExpected__\n\nThe expected number of bytes in this form.\n\n__incomingForm.parse(request, [cb])__\n\nParses an incoming node.js `request` containing form data. If `cb` is provided, all fields an files are collected and passed to the callback:\n\n    incomingForm.parse(req, function(err, fields, files) {\n      // ...\n    });\n\n__incomingForm.onPart(part)__\n\nYou may overwrite this method if you are interested in directly accessing the multipart stream. Doing so will disable any `'field'` / `'file'` events  processing which would occur otherwise, making you fully responsible for handling the processing.\n\n    incomingForm.onPart = function(part) {\n      part.addListener('data', function() {\n        // ...\n      });\n    }\n\nIf you want to use formidable to only handle certain parts for you, you can do so:\n\n    incomingForm.onPart = function(part) {\n      if (!part.filename) {\n        // let formidable handle all non-file parts\n        incomingForm.handlePart(part);\n      }\n    }\n\nCheck the code in this method for further inspiration.\n\n__Event: 'progress' (bytesReceived, bytesExpected)__\n\nEmitted after each incoming chunk of data that has been parsed. Can be used to roll your own progress bar.\n\n__Event: 'field' (name, value)__\n\nEmitted whenever a field / value pair has been received.\n\n__Event: 'fileBegin' (name, file)__\n\nEmitted whenever a new file is detected in the upload stream. Use this even if\nyou want to stream the file to somewhere else while buffering the upload on\nthe file system.\n\n__Event: 'file' (name, file)__\n\nEmitted whenever a field / file pair has been received. `file` is an instance of `File`.\n\n__Event: 'error' (err)__\n\nEmitted when there is an error processing the incoming form. A request that experiences an error is automatically paused, you will have to manually call `request.resume()` if you want the request to continue firing `'data'` events.\n\n__Event: 'aborted'__\n\nEmitted when the request was aborted by the user. Right now this can be due to a 'timeout' or 'close' event on the socket. In the future there will be a separate 'timeout' event (needs a change in the node core).\n\n__Event: 'end' ()__\n\nEmitted when the entire request has been received, and all contained files have finished flushing to disk. This is a great place for you to send your response.\n\n### formidable.File\n\n__file.size = 0__\n\nThe size of the uploaded file in bytes. If the file is still being uploaded (see `'fileBegin'` event), this property says how many bytes of the file have been written to disk yet.\n\n__file.path = null__\n\nThe path this file is being written to. You can modify this in the `'fileBegin'` event in\ncase you are unhappy with the way formidable generates a temporary path for your files.\n\n__file.name = null__\n\nThe name this file had according to the uploading client.\n\n__file.type = null__\n\nThe mime type of this file, according to the uploading client.\n\n__file.lastModifiedDate = null__\n\nA date object (or `null`) containing the time this file was last written to. Mostly\nhere for compatibility with the [W3C File API Draft](http://dev.w3.org/2006/webapi/FileAPI/).\n\n__file.hash = null__\n\nIf hash calculation was set, you can read the hex digest out of this var.\n\n## License\n\nFormidable is licensed under the MIT license.\n\n## Ports\n\n* [multipart-parser](http://github.com/FooBarWidget/multipart-parser): a C++ parser based on formidable\n\n## Credits\n\n* [Ryan Dahl](http://twitter.com/ryah) for his work on [http-parser](http://github.com/ry/http-parser) which heavily inspired multipart_parser.js\n",
+    "maintainers": [
+      {
+        "name": "felixge",
+        "email": "felix@debuggable.com"
+      }
+    ],
+    "_rev": "bb040d90-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "1.0.11": {
+        "name": "formidable",
+        "version": "1.0.11",
+        "dependencies": {},
+        "devDependencies": {
+          "gently": "0.8.0",
+          "findit": "0.1.1",
+          "hashish": "0.0.4",
+          "urun": "0.0.4",
+          "utest": "0.0.3"
+        },
+        "directories": {
+          "lib": "./lib"
+        },
+        "main": "./lib/index",
+        "scripts": {
+          "test": "make test"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "optionalDependencies": {},
+        "_npmUser": {
+          "name": "felixge",
+          "email": "felix@debuggable.com"
+        },
+        "_id": "formidable@1.0.11",
+        "_engineSupported": true,
+        "_npmVersion": "1.1.21",
+        "_nodeVersion": "v0.6.18-pre",
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "68f63325a035e644b6f7bb3d11243b9761de1b30",
+          "tarball": "http://registry.npmjs.org/formidable/-/formidable-1.0.11.tgz"
+        },
+        "readme": "# Formidable\n\n[![Build Status](https://secure.travis-ci.org/felixge/node-formidable.png?branch=master)](http://travis-ci.org/felixge/node-formidable)\n\n## Purpose\n\nA node.js module for parsing form data, especially file uploads.\n\n## Current status\n\nThis module was developed for [Transloadit](http://transloadit.com/), a service focused on uploading\nand encoding images and videos. It has been battle-tested against hundreds of GB of file uploads from\na large variety of clients and is considered production-ready.\n\n## Features\n\n* Fast (~500mb/sec), non-buffering multipart parser\n* Automatically writing file uploads to disk\n* Low memory footprint\n* Graceful error handling\n* Very high test coverage\n\n## Changelog\n\n### v1.0.9\n\n* Emit progress when content length header parsed (Tim Koschützki)\n* Fix Readme syntax due to GitHub changes (goob)\n* Replace references to old 'sys' module in Readme with 'util' (Peter Sugihara)\n\n### v1.0.8\n\n* Strip potentially unsafe characters when using `keepExtensions: true`.\n* Switch to utest / urun for testing\n* Add travis build\n\n### v1.0.7\n\n* Remove file from package that was causing problems when installing on windows. (#102)\n* Fix typos in Readme (Jason Davies).\n\n### v1.0.6\n\n* Do not default to the default to the field name for file uploads where\n  filename=\"\".\n\n### v1.0.5\n\n* Support filename=\"\" in multipart parts\n* Explain unexpected end() errors in parser better\n\n**Note:** Starting with this version, formidable emits 'file' events for empty\nfile input fields. Previously those were incorrectly emitted as regular file\ninput fields with value = \"\".\n\n### v1.0.4\n\n* Detect a good default tmp directory regardless of platform. (#88)\n\n### v1.0.3\n\n* Fix problems with utf8 characters (#84) / semicolons in filenames (#58)\n* Small performance improvements\n* New test suite and fixture system\n\n### v1.0.2\n\n* Exclude node\\_modules folder from git\n* Implement new `'aborted'` event\n* Fix files in example folder to work with recent node versions\n* Make gently a devDependency\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v1.0.1...v1.0.2)\n\n### v1.0.1\n\n* Fix package.json to refer to proper main directory. (#68, Dean Landolt)\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v1.0.0...v1.0.1)\n\n### v1.0.0\n\n* Add support for multipart boundaries that are quoted strings. (Jeff Craig)\n\nThis marks the beginning of development on version 2.0 which will include\nseveral architectural improvements.\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v0.9.11...v1.0.0)\n\n### v0.9.11\n\n* Emit `'progress'` event when receiving data, regardless of parsing it. (Tim Koschützki)\n* Use [W3C FileAPI Draft](http://dev.w3.org/2006/webapi/FileAPI/) properties for File class\n\n**Important:** The old property names of the File class will be removed in a\nfuture release.\n\n[See Commits](https://github.com/felixge/node-formidable/compare/v0.9.10...v0.9.11)\n\n### Older releases\n\nThese releases were done before starting to maintain the above Changelog:\n\n* [v0.9.10](https://github.com/felixge/node-formidable/compare/v0.9.9...v0.9.10)\n* [v0.9.9](https://github.com/felixge/node-formidable/compare/v0.9.8...v0.9.9)\n* [v0.9.8](https://github.com/felixge/node-formidable/compare/v0.9.7...v0.9.8)\n* [v0.9.7](https://github.com/felixge/node-formidable/compare/v0.9.6...v0.9.7)\n* [v0.9.6](https://github.com/felixge/node-formidable/compare/v0.9.5...v0.9.6)\n* [v0.9.5](https://github.com/felixge/node-formidable/compare/v0.9.4...v0.9.5)\n* [v0.9.4](https://github.com/felixge/node-formidable/compare/v0.9.3...v0.9.4)\n* [v0.9.3](https://github.com/felixge/node-formidable/compare/v0.9.2...v0.9.3)\n* [v0.9.2](https://github.com/felixge/node-formidable/compare/v0.9.1...v0.9.2)\n* [v0.9.1](https://github.com/felixge/node-formidable/compare/v0.9.0...v0.9.1)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.9.0](https://github.com/felixge/node-formidable/compare/v0.8.0...v0.9.0)\n* [v0.1.0](https://github.com/felixge/node-formidable/commits/v0.1.0)\n\n## Installation\n\nVia [npm](http://github.com/isaacs/npm):\n\n    npm install formidable@latest\n\nManually:\n\n    git clone git://github.com/felixge/node-formidable.git formidable\n    vim my.js\n    # var formidable = require('./formidable');\n\nNote: Formidable requires [gently](http://github.com/felixge/node-gently) to run the unit tests, but you won't need it for just using the library.\n\n## Example\n\nParse an incoming file upload.\n\n    var formidable = require('formidable'),\n        http = require('http'),\n\n        util = require('util');\n\n    http.createServer(function(req, res) {\n      if (req.url == '/upload' && req.method.toLowerCase() == 'post') {\n        // parse a file upload\n        var form = new formidable.IncomingForm();\n        form.parse(req, function(err, fields, files) {\n          res.writeHead(200, {'content-type': 'text/plain'});\n          res.write('received upload:\\n\\n');\n          res.end(util.inspect({fields: fields, files: files}));\n        });\n        return;\n      }\n\n      // show a file upload form\n      res.writeHead(200, {'content-type': 'text/html'});\n      res.end(\n        '<form action=\"/upload\" enctype=\"multipart/form-data\" method=\"post\">'+\n        '<input type=\"text\" name=\"title\"><br>'+\n        '<input type=\"file\" name=\"upload\" multiple=\"multiple\"><br>'+\n        '<input type=\"submit\" value=\"Upload\">'+\n        '</form>'\n      );\n    }).listen(80);\n\n## API\n\n### formidable.IncomingForm\n\n__new formidable.IncomingForm()__\n\nCreates a new incoming form.\n\n__incomingForm.encoding = 'utf-8'__\n\nThe encoding to use for incoming form fields.\n\n__incomingForm.uploadDir = process.env.TMP || '/tmp' || process.cwd()__\n\nThe directory for placing file uploads in. You can move them later on using\n`fs.rename()`. The default directory is picked at module load time depending on\nthe first existing directory from those listed above.\n\n__incomingForm.keepExtensions = false__\n\nIf you want the files written to `incomingForm.uploadDir` to include the extensions of the original files, set this property to `true`.\n\n__incomingForm.type__\n\nEither 'multipart' or 'urlencoded' depending on the incoming request.\n\n__incomingForm.maxFieldsSize = 2 * 1024 * 1024__\n\nLimits the amount of memory a field (not file) can allocate in bytes.\nIf this value is exceeded, an `'error'` event is emitted. The default\nsize is 2MB.\n\n__incomingForm.hash = false__\n\nIf you want checksums calculated for incoming files, set this to either `'sha1'` or `'md5'`.\n\n__incomingForm.bytesReceived__\n\nThe amount of bytes received for this form so far.\n\n__incomingForm.bytesExpected__\n\nThe expected number of bytes in this form.\n\n__incomingForm.parse(request, [cb])__\n\nParses an incoming node.js `request` containing form data. If `cb` is provided, all fields an files are collected and passed to the callback:\n\n    incomingForm.parse(req, function(err, fields, files) {\n      // ...\n    });\n\n__incomingForm.onPart(part)__\n\nYou may overwrite this method if you are interested in directly accessing the multipart stream. Doing so will disable any `'field'` / `'file'` events  processing which would occur otherwise, making you fully responsible for handling the processing.\n\n    incomingForm.onPart = function(part) {\n      part.addListener('data', function() {\n        // ...\n      });\n    }\n\nIf you want to use formidable to only handle certain parts for you, you can do so:\n\n    incomingForm.onPart = function(part) {\n      if (!part.filename) {\n        // let formidable handle all non-file parts\n        incomingForm.handlePart(part);\n      }\n    }\n\nCheck the code in this method for further inspiration.\n\n__Event: 'progress' (bytesReceived, bytesExpected)__\n\nEmitted after each incoming chunk of data that has been parsed. Can be used to roll your own progress bar.\n\n__Event: 'field' (name, value)__\n\nEmitted whenever a field / value pair has been received.\n\n__Event: 'fileBegin' (name, file)__\n\nEmitted whenever a new file is detected in the upload stream. Use this even if\nyou want to stream the file to somewhere else while buffering the upload on\nthe file system.\n\n__Event: 'file' (name, file)__\n\nEmitted whenever a field / file pair has been received. `file` is an instance of `File`.\n\n__Event: 'error' (err)__\n\nEmitted when there is an error processing the incoming form. A request that experiences an error is automatically paused, you will have to manually call `request.resume()` if you want the request to continue firing `'data'` events.\n\n__Event: 'aborted'__\n\nEmitted when the request was aborted by the user. Right now this can be due to a 'timeout' or 'close' event on the socket. In the future there will be a separate 'timeout' event (needs a change in the node core).\n\n__Event: 'end' ()__\n\nEmitted when the entire request has been received, and all contained files have finished flushing to disk. This is a great place for you to send your response.\n\n### formidable.File\n\n__file.size = 0__\n\nThe size of the uploaded file in bytes. If the file is still being uploaded (see `'fileBegin'` event), this property says how many bytes of the file have been written to disk yet.\n\n__file.path = null__\n\nThe path this file is being written to. You can modify this in the `'fileBegin'` event in\ncase you are unhappy with the way formidable generates a temporary path for your files.\n\n__file.name = null__\n\nThe name this file had according to the uploading client.\n\n__file.type = null__\n\nThe mime type of this file, according to the uploading client.\n\n__file.lastModifiedDate = null__\n\nA date object (or `null`) containing the time this file was last written to. Mostly\nhere for compatibility with the [W3C File API Draft](http://dev.w3.org/2006/webapi/FileAPI/).\n\n__file.hash = null__\n\nIf hash calculation was set, you can read the hex digest out of this var.\n\n## License\n\nFormidable is licensed under the MIT license.\n\n## Ports\n\n* [multipart-parser](http://github.com/FooBarWidget/multipart-parser): a C++ parser based on formidable\n\n## Credits\n\n* [Ryan Dahl](http://twitter.com/ryah) for his work on [http-parser](http://github.com/ry/http-parser) which heavily inspired multipart_parser.js\n",
+        "maintainers": [
+          {
+            "name": "felixge",
+            "email": "felix@debuggable.com"
+          }
+        ]
+      }
+    },
+    "dist-tags": {
+      "latest": "1.0.11"
+    }
+  },
+  "fresh": {
+    "name": "fresh",
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca",
+      "url": "http://tjholowaychuk.com"
+    },
+    "description": "HTTP response freshness testing",
+    "version": "0.1.0",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+    },
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "_id": "fresh",
+    "optionalDependencies": {},
+    "engines": {
+      "node": "*"
+    },
+    "_engineSupported": true,
+    "_npmVersion": "1.1.24",
+    "_nodeVersion": "v0.6.19",
+    "_defaultsLoaded": true,
+    "dist": {
+      "shasum": "03e4b0178424e4c2d5d19a54d8814cdc97934850",
+      "tarball": "http://registry.npmjs.org/fresh/-/fresh-0.1.0.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb0434a0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.1.0": {
+        "name": "fresh",
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca",
+          "url": "http://tjholowaychuk.com"
+        },
+        "description": "HTTP response freshness testing",
+        "version": "0.1.0",
+        "main": "index.js",
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "*",
+          "should": "*"
+        },
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "_id": "fresh@0.1.0",
+        "optionalDependencies": {},
+        "engines": {
+          "node": "*"
+        },
+        "_engineSupported": true,
+        "_npmVersion": "1.1.24",
+        "_nodeVersion": "v0.6.19",
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "03e4b0178424e4c2d5d19a54d8814cdc97934850",
+          "tarball": "http://registry.npmjs.org/fresh/-/fresh-0.1.0.tgz"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.1.0"
+    }
+  },
+  "methods": {
+    "name": "methods",
+    "version": "0.0.1",
+    "description": "HTTP methods that node supports",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "http",
+      "methods"
+    ],
+    "author": {
+      "name": "TJ Holowaychuk"
+    },
+    "license": "MIT",
+    "_id": "methods",
+    "dist": {
+      "shasum": "277c90f8bef39709645a8371c51c3b6c648e068c",
+      "tarball": "http://registry.npmjs.org/methods/-/methods-0.0.1.tgz"
+    },
+    "readme": "",
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb045bb0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.0.1": {
+        "name": "methods",
+        "version": "0.0.1",
+        "description": "HTTP methods that node supports",
+        "main": "index.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "keywords": [
+          "http",
+          "methods"
+        ],
+        "author": {
+          "name": "TJ Holowaychuk"
+        },
+        "license": "MIT",
+        "_id": "methods@0.0.1",
+        "dist": {
+          "shasum": "277c90f8bef39709645a8371c51c3b6c648e068c",
+          "tarball": "http://registry.npmjs.org/methods/-/methods-0.0.1.tgz"
+        },
+        "readme": "",
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.0.1"
+    }
+  },
+  "mime": {
+    "author": {
+      "name": "Robert Kieffer",
+      "email": "robert@broofa.com",
+      "url": "http://github.com/broofa"
+    },
+    "contributors": [
+      {
+        "name": "Benjamin Thomas",
+        "email": "benjamin@benjaminthomas.org",
+        "url": "http://github.com/bentomas"
+      }
+    ],
+    "dependencies": {},
+    "description": "A comprehensive library for mime-type mapping",
+    "devDependencies": {},
+    "keywords": [
+      "util",
+      "mime"
+    ],
+    "main": "mime.js",
+    "name": "mime",
+    "repository": {
+      "url": "git://github.com/broofa/node-mime.git",
+      "type": "git"
+    },
+    "version": "1.2.6",
+    "_npmUser": {
+      "name": "bentomas",
+      "email": "benjamin@benjaminthomas.org"
+    },
+    "_id": "mime",
+    "optionalDependencies": {},
+    "engines": {
+      "node": "*"
+    },
+    "_engineSupported": true,
+    "_npmVersion": "1.1.12",
+    "_nodeVersion": "v0.6.14",
+    "_defaultsLoaded": true,
+    "dist": {
+      "shasum": "b1f86c768c025fa87b48075f1709f28aeaf20365",
+      "tarball": "http://registry.npmjs.org/mime/-/mime-1.2.6.tgz"
+    },
+    "readme": "# mime\n\nComprehensive MIME type mapping API. Includes all 600+ types and 800+ extensions defined by the Apache project, plus additional types submitted by the node.js community.\n\n## Install\n\nInstall with [npm](http://github.com/isaacs/npm):\n\n    npm install mime\n\n## API - Queries\n\n### mime.lookup(path)\nGet the mime type associated with a file. Performs a case-insensitive lookup using the extension in `path` (the substring after the last '/' or '.').  E.g.\n\n    var mime = require('mime');\n\n    mime.lookup('/path/to/file.txt');         // => 'text/plain'\n    mime.lookup('file.txt');                  // => 'text/plain'\n    mime.lookup('.TXT');                      // => 'text/plain'\n    mime.lookup('htm');                       // => 'text/html'\n\n### mime.extension(type)\nGet the default extension for `type`\n\n    mime.extension('text/html');                 // => 'html'\n    mime.extension('application/octet-stream');  // => 'bin'\n\n### mime.charsets.lookup()\n\nMap mime-type to charset\n\n    mime.charsets.lookup('text/plain');        // => 'UTF-8'\n\n(The logic for charset lookups is pretty rudimentary.  Feel free to suggest improvements.)\n\n## API - Defining Custom Types\n\nThe following APIs allow you to add your own type mappings within your project.  If you feel a type should be included as part of node-mime, see [requesting new types](https://github.com/bentomas/node-mime/wiki/Requesting-New-Types).\n\n### mime.define()\n\nAdd custom mime/extension mappings\n\n    mime.define({\n        'text/x-some-format': ['x-sf', 'x-sft', 'x-sfml'],\n        'application/x-my-type': ['x-mt', 'x-mtt'],\n        // etc ...\n    });\n\n    mime.lookup('x-sft');                 // => 'text/x-some-format'\n\nThe first entry in the extensions array is returned by `mime.extension()`. E.g.\n\n    mime.extension('text/x-some-format'); // => 'x-sf'\n\n### mime.load(filepath)\n\nLoad mappings from an Apache \".types\" format file\n\n    mime.load('./my_project.types');\n\nThe .types file format is simple -  See the `types` dir for examples.\n",
+    "maintainers": [
+      {
+        "name": "broofa",
+        "email": "robert@broofa.com"
+      },
+      {
+        "name": "bentomas",
+        "email": "benjamin@benjaminthomas.org"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb0482c0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "1.2.6": {
+        "author": {
+          "name": "Robert Kieffer",
+          "email": "robert@broofa.com",
+          "url": "http://github.com/broofa"
+        },
+        "contributors": [
+          {
+            "name": "Benjamin Thomas",
+            "email": "benjamin@benjaminthomas.org",
+            "url": "http://github.com/bentomas"
+          }
+        ],
+        "dependencies": {},
+        "description": "A comprehensive library for mime-type mapping",
+        "devDependencies": {},
+        "keywords": [
+          "util",
+          "mime"
+        ],
+        "main": "mime.js",
+        "name": "mime",
+        "repository": {
+          "url": "git://github.com/broofa/node-mime.git",
+          "type": "git"
+        },
+        "version": "1.2.6",
+        "_npmUser": {
+          "name": "bentomas",
+          "email": "benjamin@benjaminthomas.org"
+        },
+        "_id": "mime@1.2.6",
+        "optionalDependencies": {},
+        "engines": {
+          "node": "*"
+        },
+        "_engineSupported": true,
+        "_npmVersion": "1.1.12",
+        "_nodeVersion": "v0.6.14",
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "b1f86c768c025fa87b48075f1709f28aeaf20365",
+          "tarball": "http://registry.npmjs.org/mime/-/mime-1.2.6.tgz"
+        },
+        "readme": "# mime\n\nComprehensive MIME type mapping API. Includes all 600+ types and 800+ extensions defined by the Apache project, plus additional types submitted by the node.js community.\n\n## Install\n\nInstall with [npm](http://github.com/isaacs/npm):\n\n    npm install mime\n\n## API - Queries\n\n### mime.lookup(path)\nGet the mime type associated with a file. Performs a case-insensitive lookup using the extension in `path` (the substring after the last '/' or '.').  E.g.\n\n    var mime = require('mime');\n\n    mime.lookup('/path/to/file.txt');         // => 'text/plain'\n    mime.lookup('file.txt');                  // => 'text/plain'\n    mime.lookup('.TXT');                      // => 'text/plain'\n    mime.lookup('htm');                       // => 'text/html'\n\n### mime.extension(type)\nGet the default extension for `type`\n\n    mime.extension('text/html');                 // => 'html'\n    mime.extension('application/octet-stream');  // => 'bin'\n\n### mime.charsets.lookup()\n\nMap mime-type to charset\n\n    mime.charsets.lookup('text/plain');        // => 'UTF-8'\n\n(The logic for charset lookups is pretty rudimentary.  Feel free to suggest improvements.)\n\n## API - Defining Custom Types\n\nThe following APIs allow you to add your own type mappings within your project.  If you feel a type should be included as part of node-mime, see [requesting new types](https://github.com/bentomas/node-mime/wiki/Requesting-New-Types).\n\n### mime.define()\n\nAdd custom mime/extension mappings\n\n    mime.define({\n        'text/x-some-format': ['x-sf', 'x-sft', 'x-sfml'],\n        'application/x-my-type': ['x-mt', 'x-mtt'],\n        // etc ...\n    });\n\n    mime.lookup('x-sft');                 // => 'text/x-some-format'\n\nThe first entry in the extensions array is returned by `mime.extension()`. E.g.\n\n    mime.extension('text/x-some-format'); // => 'x-sf'\n\n### mime.load(filepath)\n\nLoad mappings from an Apache \".types\" format file\n\n    mime.load('./my_project.types');\n\nThe .types file format is simple -  See the `types` dir for examples.\n",
+        "maintainers": [
+          {
+            "name": "broofa",
+            "email": "robert@broofa.com"
+          },
+          {
+            "name": "bentomas",
+            "email": "benjamin@benjaminthomas.org"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "1.2.6"
+    }
+  },
+  "mkdirp": {
+    "name": "mkdirp",
+    "description": "Recursively mkdir, like `mkdir -p`",
+    "version": "0.3.5",
+    "author": {
+      "name": "James Halliday",
+      "email": "mail@substack.net",
+      "url": "http://substack.net"
+    },
+    "main": "./index",
+    "keywords": [
+      "mkdir",
+      "directory"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/substack/node-mkdirp.git"
+    },
+    "scripts": {
+      "test": "tap test/*.js"
+    },
+    "devDependencies": {
+      "tap": "~0.4.0"
+    },
+    "license": "MIT",
+    "readme": "# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require('mkdirp');\n    \nmkdirp('/tmp/foo/bar/baz', function (err) {\n    if (err) console.error(err)\n    else console.log('pow!')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require('mkdirp');\n```\n\n## mkdirp(dir, mode, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn't specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\n## mkdirp.sync(dir, mode)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn't specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\n# license\n\nMIT\n",
+    "readmeFilename": "readme.markdown",
+    "_id": "mkdirp",
+    "dist": {
+      "shasum": "de3e5f8961c88c787ee1368df849ac4413eca8d7",
+      "tarball": "http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz"
+    },
+    "_from": ".",
+    "_npmVersion": "1.2.2",
+    "_npmUser": {
+      "name": "substack",
+      "email": "mail@substack.net"
+    },
+    "maintainers": [
+      {
+        "name": "substack",
+        "email": "mail@substack.net"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb04a9d0-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.3.5": {
+        "name": "mkdirp",
+        "description": "Recursively mkdir, like `mkdir -p`",
+        "version": "0.3.5",
+        "author": {
+          "name": "James Halliday",
+          "email": "mail@substack.net",
+          "url": "http://substack.net"
+        },
+        "main": "./index",
+        "keywords": [
+          "mkdir",
+          "directory"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "http://github.com/substack/node-mkdirp.git"
+        },
+        "scripts": {
+          "test": "tap test/*.js"
+        },
+        "devDependencies": {
+          "tap": "~0.4.0"
+        },
+        "license": "MIT",
+        "readme": "# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require('mkdirp');\n    \nmkdirp('/tmp/foo/bar/baz', function (err) {\n    if (err) console.error(err)\n    else console.log('pow!')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require('mkdirp');\n```\n\n## mkdirp(dir, mode, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn't specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\n## mkdirp.sync(dir, mode)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn't specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\n# license\n\nMIT\n",
+        "readmeFilename": "readme.markdown",
+        "_id": "mkdirp@0.3.5",
+        "dist": {
+          "shasum": "de3e5f8961c88c787ee1368df849ac4413eca8d7",
+          "tarball": "http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz"
+        },
+        "_from": ".",
+        "_npmVersion": "1.2.2",
+        "_npmUser": {
+          "name": "substack",
+          "email": "mail@substack.net"
+        },
+        "maintainers": [
+          {
+            "name": "substack",
+            "email": "mail@substack.net"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.3.5"
+    }
+  },
+  "pause": {
+    "name": "pause",
+    "version": "0.0.1",
+    "description": "Pause streams...",
+    "keywords": [],
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+    },
+    "main": "index",
+    "_id": "pause",
+    "dist": {
+      "shasum": "1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d",
+      "tarball": "http://registry.npmjs.org/pause/-/pause-0.0.1.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb056d20-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.0.1": {
+        "name": "pause",
+        "version": "0.0.1",
+        "description": "Pause streams...",
+        "keywords": [],
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "*",
+          "should": "*"
+        },
+        "main": "index",
+        "_id": "pause@0.0.1",
+        "dist": {
+          "shasum": "1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d",
+          "tarball": "http://registry.npmjs.org/pause/-/pause-0.0.1.tgz"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.0.1"
+    }
+  },
+  "qs": {
+    "name": "qs",
+    "description": "querystring parser",
+    "version": "0.5.1",
+    "keywords": [
+      "query string",
+      "parser",
+      "component"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/visionmedia/node-querystring.git"
+    },
+    "devDependencies": {
+      "mocha": "*",
+      "expect.js": "*"
+    },
+    "component": {
+      "scripts": {
+        "querystring": "querystring.js"
+      }
+    },
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca",
+      "url": "http://tjholowaychuk.com"
+    },
+    "main": "index",
+    "engines": {
+      "node": "*"
+    },
+    "readme": "# node-querystring\n\n  query string parser for node and the browser supporting nesting, as it was removed from `0.3.x`, so this library provides the previous and commonly desired behaviour (and twice as fast). Used by [express](http://expressjs.com), [connect](http://senchalabs.github.com/connect) and others.\n\n## Installation\n\n    $ npm install qs\n\n## Examples\n\n```js\nvar qs = require('qs');\n\nqs.parse('user[name][first]=Tobi&user[email]=tobi@learnboost.com');\n// => { user: { name: { first: 'Tobi' }, email: 'tobi@learnboost.com' } }\n\nqs.stringify({ user: { name: 'Tobi', email: 'tobi@learnboost.com' }})\n// => user[name]=Tobi&user[email]=tobi%40learnboost.com\n```\n\n## Testing\n\nInstall dev dependencies:\n\n    $ npm install -d\n\nand execute:\n\n    $ make test\n\nbrowser:\n\n    $ open test/browser/index.html\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "_id": "qs",
+    "dist": {
+      "shasum": "9f6bf5d9ac6c76384e95d36d15b48980e5e4add0",
+      "tarball": "http://registry.npmjs.org/qs/-/qs-0.5.1.tgz"
+    },
+    "_npmVersion": "1.1.61",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb059430-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.5.1": {
+        "name": "qs",
+        "description": "querystring parser",
+        "version": "0.5.1",
+        "keywords": [
+          "query string",
+          "parser",
+          "component"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/visionmedia/node-querystring.git"
+        },
+        "devDependencies": {
+          "mocha": "*",
+          "expect.js": "*"
+        },
+        "component": {
+          "scripts": {
+            "querystring": "querystring.js"
+          }
+        },
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca",
+          "url": "http://tjholowaychuk.com"
+        },
+        "main": "index",
+        "engines": {
+          "node": "*"
+        },
+        "readme": "# node-querystring\n\n  query string parser for node and the browser supporting nesting, as it was removed from `0.3.x`, so this library provides the previous and commonly desired behaviour (and twice as fast). Used by [express](http://expressjs.com), [connect](http://senchalabs.github.com/connect) and others.\n\n## Installation\n\n    $ npm install qs\n\n## Examples\n\n```js\nvar qs = require('qs');\n\nqs.parse('user[name][first]=Tobi&user[email]=tobi@learnboost.com');\n// => { user: { name: { first: 'Tobi' }, email: 'tobi@learnboost.com' } }\n\nqs.stringify({ user: { name: 'Tobi', email: 'tobi@learnboost.com' }})\n// => user[name]=Tobi&user[email]=tobi%40learnboost.com\n```\n\n## Testing\n\nInstall dev dependencies:\n\n    $ npm install -d\n\nand execute:\n\n    $ make test\n\nbrowser:\n\n    $ open test/browser/index.html\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2010 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "_id": "qs@0.5.1",
+        "dist": {
+          "shasum": "9f6bf5d9ac6c76384e95d36d15b48980e5e4add0",
+          "tarball": "http://registry.npmjs.org/qs/-/qs-0.5.1.tgz"
+        },
+        "_npmVersion": "1.1.61",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.5.1"
+    }
+  },
+  "range-parser": {
+    "name": "range-parser",
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca",
+      "url": "http://tjholowaychuk.com"
+    },
+    "description": "Range header field string parser",
+    "version": "0.0.4",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+    },
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "_id": "range-parser",
+    "optionalDependencies": {},
+    "engines": {
+      "node": "*"
+    },
+    "_engineSupported": true,
+    "_npmVersion": "1.1.19",
+    "_nodeVersion": "v0.6.16",
+    "_defaultsLoaded": true,
+    "dist": {
+      "shasum": "c0427ffef51c10acba0782a46c9602e744ff620b",
+      "tarball": "http://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb05bb40-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.0.4": {
+        "name": "range-parser",
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca",
+          "url": "http://tjholowaychuk.com"
+        },
+        "description": "Range header field string parser",
+        "version": "0.0.4",
+        "main": "index.js",
+        "dependencies": {},
+        "devDependencies": {
+          "mocha": "*",
+          "should": "*"
+        },
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "_id": "range-parser@0.0.4",
+        "optionalDependencies": {},
+        "engines": {
+          "node": "*"
+        },
+        "_engineSupported": true,
+        "_npmVersion": "1.1.19",
+        "_nodeVersion": "v0.6.16",
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "c0427ffef51c10acba0782a46c9602e744ff620b",
+          "tarball": "http://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.0.4"
+    }
+  },
+  "send": {
+    "name": "send",
+    "version": "0.1.0",
+    "description": "Better streaming static file server with Range and conditional-GET support",
+    "keywords": [
+      "static",
+      "file",
+      "server"
+    ],
+    "author": {
+      "name": "TJ Holowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "dependencies": {
+      "debug": "*",
+      "mime": "1.2.6",
+      "fresh": "0.1.0",
+      "range-parser": "0.0.4"
+    },
+    "devDependencies": {
+      "mocha": "*",
+      "should": "*",
+      "supertest": "0.0.1",
+      "connect": "2.x"
+    },
+    "scripts": {
+      "test": "make test"
+    },
+    "main": "index",
+    "readme": "\n# send\n\n  Send is Connect's `static()` extracted for generalized use, a streaming static file\n  server supporting partial responses (Ranges), conditional-GET negotiation, high test coverage, and granular events which may be leveraged to take appropriate actions in your application or framework.\n\n## Installation\n\n    $ npm install send\n\n## Examples\n\n  Small:\n\n```js\nvar http = require('http');\nvar send = require('send');\n\nvar app = http.createServer(function(req, res){\n  send(req, req.url).pipe(res);\n});\n```\n\n  Serving from a root directory with custom error-handling:\n\n```js\nvar http = require('http');\nvar send = require('send');\n\nvar app = http.createServer(function(req, res){\n  // your custom error-handling logic:\n  function error(err) {\n    res.statusCode = err.status || 500;\n    res.end(err.message);\n  }\n\n  // your custom directory handling logic:\n  function redirect() {\n    res.statusCode = 301;\n    res.setHeader('Location', req.url + '/');\n    res.end('Redirecting to ' + req.url + '/');\n  }\n\n  // transfer arbitrary files from within\n  // /www/example.com/public/*\n  send(req, url.parse(req.url).pathname)\n  .root('/www/example.com/public')\n  .on('error', error)\n  .on('directory', redirect)\n  .pipe(res);\n});\n```\n\n## API\n\n### Events\n\n  - `error` an error occurred `(err)`\n  - `directory` a directory was requested\n  - `stream` file streaming has started `(stream)`\n  - `end` streaming has completed\n\n### .root(dir)\n\n  Serve files relative to `path`. Aliased as `.from(dir)`.\n\n### .index(path)\n\n  By default send supports \"index.html\" files, to disable this\n  invoke `.index(false)` or to supply a new index pass a string.\n\n### .maxage(ms)\n\n  Provide a max-age in milliseconds for http caching, defaults to 0.\n\n## Error-handling\n\n  By default when no `error` listeners are present an automatic response will be made, otherwise you have full control over the response, aka you may show a 5xx page etc.\n\n## Caching\n\n  It does _not_ perform internal caching, you should use a reverse proxy cache such\n  as Varnish for this, or those fancy things called CDNs. If your application is small enough that it would benefit from single-node memory caching, it's small enough that it does not need caching at all ;).\n\n## Debugging\n\n To enable `debug()` instrumentation output export __DEBUG__:\n\n```\n$ DEBUG=send node app\n```\n\n## Running tests\n\n```\n$ npm install\n$ make test\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "_id": "send",
+    "dist": {
+      "shasum": "cfb08ebd3cec9b7fc1a37d9ff9e875a971cf4640",
+      "tarball": "http://registry.npmjs.org/send/-/send-0.1.0.tgz"
+    },
+    "_npmVersion": "1.1.61",
+    "_npmUser": {
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
+    },
+    "maintainers": [
+      {
+        "name": "tjholowaychuk",
+        "email": "tj@vision-media.ca"
+      }
+    ],
+    "directories": {},
+    "_rev": "bb05e250-5216-11e3-9736-9b74deeb3025",
+    "versions": {
+      "0.1.0": {
+        "name": "send",
+        "version": "0.1.0",
+        "description": "Better streaming static file server with Range and conditional-GET support",
+        "keywords": [
+          "static",
+          "file",
+          "server"
+        ],
+        "author": {
+          "name": "TJ Holowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "dependencies": {
+          "debug": "*",
+          "mime": "1.2.6",
+          "fresh": "0.1.0",
+          "range-parser": "0.0.4"
+        },
+        "devDependencies": {
+          "mocha": "*",
+          "should": "*",
+          "supertest": "0.0.1",
+          "connect": "2.x"
+        },
+        "scripts": {
+          "test": "make test"
+        },
+        "main": "index",
+        "readme": "\n# send\n\n  Send is Connect's `static()` extracted for generalized use, a streaming static file\n  server supporting partial responses (Ranges), conditional-GET negotiation, high test coverage, and granular events which may be leveraged to take appropriate actions in your application or framework.\n\n## Installation\n\n    $ npm install send\n\n## Examples\n\n  Small:\n\n```js\nvar http = require('http');\nvar send = require('send');\n\nvar app = http.createServer(function(req, res){\n  send(req, req.url).pipe(res);\n});\n```\n\n  Serving from a root directory with custom error-handling:\n\n```js\nvar http = require('http');\nvar send = require('send');\n\nvar app = http.createServer(function(req, res){\n  // your custom error-handling logic:\n  function error(err) {\n    res.statusCode = err.status || 500;\n    res.end(err.message);\n  }\n\n  // your custom directory handling logic:\n  function redirect() {\n    res.statusCode = 301;\n    res.setHeader('Location', req.url + '/');\n    res.end('Redirecting to ' + req.url + '/');\n  }\n\n  // transfer arbitrary files from within\n  // /www/example.com/public/*\n  send(req, url.parse(req.url).pathname)\n  .root('/www/example.com/public')\n  .on('error', error)\n  .on('directory', redirect)\n  .pipe(res);\n});\n```\n\n## API\n\n### Events\n\n  - `error` an error occurred `(err)`\n  - `directory` a directory was requested\n  - `stream` file streaming has started `(stream)`\n  - `end` streaming has completed\n\n### .root(dir)\n\n  Serve files relative to `path`. Aliased as `.from(dir)`.\n\n### .index(path)\n\n  By default send supports \"index.html\" files, to disable this\n  invoke `.index(false)` or to supply a new index pass a string.\n\n### .maxage(ms)\n\n  Provide a max-age in milliseconds for http caching, defaults to 0.\n\n## Error-handling\n\n  By default when no `error` listeners are present an automatic response will be made, otherwise you have full control over the response, aka you may show a 5xx page etc.\n\n## Caching\n\n  It does _not_ perform internal caching, you should use a reverse proxy cache such\n  as Varnish for this, or those fancy things called CDNs. If your application is small enough that it would benefit from single-node memory caching, it's small enough that it does not need caching at all ;).\n\n## Debugging\n\n To enable `debug()` instrumentation output export __DEBUG__:\n\n```\n$ DEBUG=send node app\n```\n\n## Running tests\n\n```\n$ npm install\n$ make test\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "_id": "send@0.1.0",
+        "dist": {
+          "shasum": "cfb08ebd3cec9b7fc1a37d9ff9e875a971cf4640",
+          "tarball": "http://registry.npmjs.org/send/-/send-0.1.0.tgz"
+        },
+        "_npmVersion": "1.1.61",
+        "_npmUser": {
+          "name": "tjholowaychuk",
+          "email": "tj@vision-media.ca"
+        },
+        "maintainers": [
+          {
+            "name": "tjholowaychuk",
+            "email": "tj@vision-media.ca"
+          }
+        ],
+        "directories": {}
+      }
+    },
+    "dist-tags": {
+      "latest": "0.1.0"
+    }
+  }
+}
