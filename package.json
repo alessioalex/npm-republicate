@@ -1,6 +1,6 @@
 {
   "name": "npm-republicate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Replicate an NPM module (along with its deps) from registry A to registry B (by publishing it && its deps).",
   "main": "index.js",
   "dependencies": {
