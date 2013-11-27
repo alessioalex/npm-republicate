@@ -46,6 +46,8 @@ republicate({
   username : 'johndoe',
   email    : 'john@doe.npm',
   password : 'roses',
+  // uncomment below to republicate all versions of the package
+  // all      : true,
   // passing your bunyan custom logger
   log      : logger
 }, function(err) {

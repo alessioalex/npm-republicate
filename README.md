@@ -9,7 +9,7 @@ Replicates a module (along with its dependencies) from an NPM registry to anothe
 `republicate(package, options, callback)`, where:
 
 - `package` is an object containing the `name` && `version` properties (for the module you want to replicate)
-- `options` is an object that can have the following properties: cacheDir / npmClient (see https://github.com/alessioalex/npm-pkginfo), to (target registry), from (destination registry), username, email, password (NPM data needed for auth when publishing a module), log (bunyan logger instance).
+- `options` is an object that can have the following properties: cacheDir / npmClient (see https://github.com/alessioalex/npm-pkginfo), to (target registry), from (destination registry), username, email, password (NPM data needed for auth when publishing a module), log (bunyan logger instance), all (if you want to republicate all versions of a package).
 
 ### Use cases
 

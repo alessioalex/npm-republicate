@@ -3,11 +3,11 @@
 // set the maxSockets to a reasonable value since they're used
 // by npm-registry-client and there's no other way to set this up currently
 // this annoyance will be solved in v0.12.x
-var semver = require('semver');
+// var semver = require('semver');
 var http = require('http');
-if (!semver.satisfies(process.version, '< 0.11.x') && (http.globalAgent.maxSockets < 100)) {
-  http.globalAgent.maxSockets = 100;
-}
+// if (!semver.satisfies(process.version, '< 0.11.x') && (http.globalAgent.maxSockets < 100)) {
+  http.globalAgent.maxSockets = 300;
+// }
 
 var os                = require('os'),
     fse               = require('fs-extra'),
@@ -25,7 +25,7 @@ tmpDir = os.tmpdir() + '/npm-republicator-example';
 fse.removeSync(tmpDir);
 fse.mkdirsSync(tmpDir);
 
-pkgName    = process.env.PKG || 'express';
+pkgName    = process.env.PKG || 'request';
 pkgVersion = process.env.VER || 'latest';
 
 logger     = bunyan.createLogger({
@@ -39,6 +39,7 @@ republicate({
   version : pkgVersion
 }, {
   cacheDir : tmpDir,
+  from     : process.env.FROM || ('http://registry.npmjs.eu/'),
   to       : 'http://localhost:' + port + '/',
   // the following are required when you publish modules with NPM
   username : 'johndoe',
@@ -63,4 +64,8 @@ republicate({
   // `npm install package@version`
   //
   // TADA!!
+
+  // the app will stay alive at this point, but
+  // if you want to close it uncomment the line below
+  // server.close();
 });
