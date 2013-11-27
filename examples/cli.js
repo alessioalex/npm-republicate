@@ -9,7 +9,7 @@
 var semver = require('semver');
 var http = require('http');
 if (!semver.satisfies(process.version, '< 0.11.x') && (http.globalAgent.maxSockets < 100)) {
-  http.globalAgent.maxSockets = 100;
+  http.globalAgent.maxSockets = Infinity;
 }
 
 var os                = require('os'),
@@ -24,7 +24,7 @@ fse.removeSync(tmpDir);
 fse.mkdirsSync(tmpDir);
 
 port       = process.env.PORT || 2013;
-pkgName    = process.env.PKG  || 'express';
+pkgName    = process.env.PKG  || 'request';
 pkgVersion = process.env.VER  || 'latest';
 to         = process.env.TO   || 'http://localhost:' + port + '/';
 from       = process.env.FROM || 'http://registry.npmjs.eu';
@@ -47,7 +47,7 @@ republicate({
   email    : 'john@doe.npm',
   password : 'roses',
   // uncomment below to republicate all versions of the package
-  // all      : true,
+  all      : true,
   // passing your bunyan custom logger
   log      : logger
 }, function(err) {
